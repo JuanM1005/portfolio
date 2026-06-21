@@ -1,21 +1,22 @@
 @import 'tailwindcss';
 
 /* ============================================================
-   TOKENS DE DISEÑO — Portfolio Juan Mares
-   ============================================================
-   Tailwind 4 usa @theme para registrar tokens custom.
-   Cualquier variable definida acá se convierte en una utility
-   class automáticamente (ej: --color-accent-500 → bg-accent-500).
-   ============================================================ */
+    TOKENS DE DISEÑO — Portfolio Juan Mares
+    ============================================================
+    Tailwind 4 usa @theme para registrar tokens custom.
+    Cualquier variable definida acá se convierte en una utility
+    class automáticamente (ej: --color-accent-500 → bg-accent-500).
+    ============================================================ */
 
 @theme {
   /* --- Tipografía --- */
-  /* --font-sans: 'Geist', 'Inter', ui-sans-serif, system-ui, sans-serif; */
+  --font-sans: 'Geist', 'Inter', ui-sans-serif, system-ui, sans-serif;
   --font-mono: 'Geist Mono', 'JetBrains Mono', ui-monospace, monospace;
 
   /* --- Paleta neutra (fondos, texto, bordes) --- */
   --color-surface: #f8f8f5; /* fondo base, crema cálido */
   --color-surface-card: #ffffff; /* fondo de cards */
+  --color-surface-card-muted: #fcfdfa; /* card ghost — blanco limpio */
   --color-ink: #0a0a0a; /* texto principal */
   --color-ink-muted: #6b7280; /* texto secundario */
   --color-border-soft: #e5e7eb; /* bordes sutiles */
@@ -29,12 +30,12 @@
   /* --- Estados --- */
   --color-status-available: #10b981; /* verde — disponible / completado */
   --color-status-progress: #f59e0b; /* ámbar — en desarrollo */
-  --color-status-upcoming: #9ca3af; /* gris — próximamente */
+  --color-status-upcoming: #a122e0; /* gris — próximamente */
 }
 
 /* ============================================================
-   ESTILOS BASE
-   ============================================================ */
+    ESTILOS BASE
+    ============================================================ */
 
 html {
   scroll-behavior: smooth; /* navegación por anclas suave */
@@ -43,7 +44,7 @@ html {
 body {
   background-color: var(--color-surface);
   color: var(--color-ink);
-  font-family: var(--font-mono);
+  font-family: var(--font-sans);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
