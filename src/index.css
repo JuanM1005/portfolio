@@ -14,6 +14,7 @@
   --font-mono: 'Geist Mono', 'JetBrains Mono', ui-monospace, monospace;
 
   /* --- Paleta neutra (fondos, texto, bordes) --- */
+  --color-background: #f7f7f4;
   --color-surface: #f8f8f5; /* fondo base, crema cálido */
   --color-surface-card: #ffffff; /* fondo de cards */
   --color-surface-card-muted: #fcfdfa; /* card ghost — blanco limpio */
@@ -26,6 +27,14 @@
   --color-accent-500: #3b82f6;
   --color-accent-600: #2563eb; /* el azul principal */
   --color-accent-700: #1d4ed8;
+
+  /* --- Acento tinto / vino --- */
+  --color-burgundy-50: #fff1f2;
+  --color-burgundy-100: #ffe4e6;
+  --color-burgundy-500: #be123c;
+  --color-burgundy-600: #9f1239; /* color principal para botones */
+  --color-burgundy-700: #881337; /* hover */
+  --color-burgundy-900: #4c0519;
 
   /* --- Estados --- */
   --color-status-available: #10b981; /* verde — disponible / completado */
@@ -42,7 +51,7 @@ html {
 }
 
 body {
-  background-color: var(--color-surface);
+  background-color: var(--color-background);
   color: var(--color-ink);
   font-family: var(--font-sans);
   -webkit-font-smoothing: antialiased;
@@ -50,6 +59,6 @@ body {
 }
 
 ::selection {
-  background-color: var(--color-accent-600);
+  background-color: var(--color-burgundy-600);
   color: white;
 }
