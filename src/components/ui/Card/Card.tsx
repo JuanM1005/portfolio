@@ -2,7 +2,7 @@ import type { CardVariant, CardProps } from './Card.types';
 import clsx from 'clsx';
 
 const variantStyles: Record<CardVariant, string> = {
-  default: 'bg-surface-card shadow-sm',
+  default: 'bg-surface-card',
   ghost: 'bg-surface-card-muted border-accent-500/20',
 };
 

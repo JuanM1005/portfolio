@@ -13,7 +13,7 @@ export const SectionContainer = ({
   ...rest
 }: SectionContainerProps) => {
   return (
-    <header className={clsx('mb-12 md:mb-16', className)} {...rest}>
+    <header className={clsx('mb-10 md:mb-14', className)} {...rest}>
       {/* Ej: Eyebrow -> "01 ── SOBRE MÍ" */}
       <SectionEyebrow number={eyebrowNumber} label={eyebrowLabel} />
 
