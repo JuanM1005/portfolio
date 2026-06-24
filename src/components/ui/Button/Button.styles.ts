@@ -1,4 +1,10 @@
-import type { ButtonVariant } from './Button.types';
+import type { ButtonSize, ButtonVariant } from './Button.types';
+
+export const sizeStyles: Record<ButtonSize, string> = {
+  sm: 'px-3 py-1.5 text-xs',
+  md: 'px-4 py-2 text-sm',
+  lg: 'px-5 py-2.5 text-base',
+};
 
 export const variantStyles: Record<ButtonVariant, string> = {
   primary: 'bg-accent-600 text-white hover:bg-accent-700 active:bg-accent-700',

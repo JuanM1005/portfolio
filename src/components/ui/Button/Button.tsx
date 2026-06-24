@@ -1,21 +1,21 @@
 import clsx from 'clsx';
 import type { ButtonProps } from './Button.types';
-import { variantStyles } from './Button.styles';
+import { sizeStyles, variantStyles } from './Button.styles';
 
 export const Button = ({
   children,
   variant = 'primary',
+  size = 'md',
   leftIcon,
   className,
   ...rest
 }: ButtonProps) => {
-  const styles = variantStyles[variant];
-
   return (
     <button
       className={clsx(
-        'inline-flex items-center justify-center gap-1 rounded-md px-4 py-2 text-sm font-medium cursor-pointer transition-all duration-300 hover:scale-95 active:scale-95 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ink focus-visible:ring-offset-0 disabled:cursor-not-allowed disabled:opacity-50',
-        styles,
+        'inline-flex items-center justify-center gap-1 rounded-md font-medium cursor-pointer transition-all duration-300 hover:scale-95 active:scale-95 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ink focus-visible:ring-offset-0 disabled:cursor-not-allowed disabled:opacity-50',
+        sizeStyles[size],
+        variantStyles[variant],
         className,
       )}
       {...rest}
