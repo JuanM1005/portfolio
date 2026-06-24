@@ -12,7 +12,7 @@ export const FooterBottom = () => {
       </p>
 
       <NavLink
-        href="#top"
+        href="#home"
         withAnimation={false}
         className="inline-flex items-center gap-1.5 font-mono text-xs text-ink-muted transition-colors hover:text-ink"
       >
