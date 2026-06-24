@@ -7,7 +7,7 @@ export const About = () => {
     <SectionLayout
       id="about"
       className="bg-section"
-      containerClassName="grid grid-cols-1 md:grid-cols-[3fr_2fr] gap-12 p-14"
+      containerClassName="grid grid-cols-1 gap-10 py-16 md:grid-cols-[3fr_2fr] md:gap-12 md:py-24"
     >
       <SectionHeader
         eyebrowNumber="01"

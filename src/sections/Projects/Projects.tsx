@@ -4,7 +4,7 @@ import { PROJECTS } from './constants/projects.constants';
 
 export const Projects = () => {
   return (
-    <SectionLayout id="projects" className="bg-section" containerClassName="p-14">
+    <SectionLayout id="projects" className="bg-section" containerClassName="py-16 md:py-24">
       <SectionHeader
         eyebrowNumber="03"
         eyebrowLabel="Proyectos"

@@ -8,7 +8,7 @@ import {
 
 export const Skills = () => {
   return (
-    <SectionLayout id="skills" containerClassName="p-14">
+    <SectionLayout id="skills" containerClassName="py-16 md:py-24">
       <SectionHeader
         eyebrowNumber="02"
         eyebrowLabel="Habilidades"

@@ -5,8 +5,7 @@ export const Hero = () => {
   return (
     <SectionLayout
       id="hero"
-      className="my-18"
-      containerClassName="grid grid-cols-1 md:grid-cols-2 gap-12 pt-14"
+      containerClassName="grid grid-cols-1 gap-10 pt-24 pb-16 md:grid-cols-2 md:items-center md:gap-12 md:pt-28 md:pb-24"
     >
       <HeroIntro />
       {/* Terminal + stack actual */}
