@@ -6,4 +6,5 @@ export const variantStyles: Record<ButtonVariant, string> = {
     'bg-burgundy-600 text-white hover:bg-burgundy-700 active:bg-burgundy-700',
   ghost:
     'bg-surface-card text-ink border border-border-soft hover:bg-neutral-50 active:bg-neutral-100',
+  dark: 'bg-ink text-white hover:bg-neutral-800 active:bg-neutral-900',
 };
