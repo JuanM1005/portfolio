@@ -1,13 +1,6 @@
-import type { IconType } from 'react-icons';
 import { FaGithub, FaLinkedinIn } from 'react-icons/fa6';
 import { MdMailOutline } from 'react-icons/md';
-
-export interface SocialLink {
-  label: string;
-  href: string;
-  icon: IconType;
-  external?: boolean;
-}
+import type { SocialLink } from '../types/social.types';
 
 export const socialLinks: SocialLink[] = [
   {
@@ -27,4 +20,4 @@ export const socialLinks: SocialLink[] = [
     href: 'mailto:juan.aguirre5548@alumnos.udg.mx',
     icon: MdMailOutline,
   },
-];
+] as const;

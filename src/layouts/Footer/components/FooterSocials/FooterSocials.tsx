@@ -1,5 +1,5 @@
 import clsx from 'clsx';
-import { socialLinks } from '../../data/social.data';
+import { socialLinks } from '../../constants/social.constants';
 
 interface FooterSocialsProps {
   className?: string;

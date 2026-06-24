@@ -1,5 +1,5 @@
-import { Container } from '@/components/ui';
-import { NavLink } from '../../../Header/components/NavLink/NavLink';
+import { Container, NavLink } from '@/components/ui';
+import { FaArrowUp } from 'react-icons/fa';
 
 export const FooterBottom = () => {
   const currentYear = new Date().getFullYear();
@@ -10,8 +10,17 @@ export const FooterBottom = () => {
         &copy; {currentYear} Juan Antonio Aguirre Mares &middot; React &middot;
         TypeScript &middot; Tailwind CSS
       </p>
-      <NavLink href="#top" withAnimation={false} className="font-mono text-xs">
-        Volver arriba ↑
+
+      <NavLink
+        href="#top"
+        withAnimation={false}
+        className="inline-flex items-center gap-1.5 font-mono text-xs text-ink-muted transition-colors hover:text-ink"
+      >
+        Volver arriba
+        <FaArrowUp
+          size={10}
+          className="transition-transform duration-200 group-hover:-translate-y-0.5"
+        />
       </NavLink>
     </Container>
   );
