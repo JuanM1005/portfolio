@@ -1,10 +1,4 @@
-import {
-  Badge,
-  Button,
-  Card,
-  Container,
-  SectionContainer,
-} from '@/components/ui';
+import { Badge, Button, Card, Container, SectionHeader } from '@/components/ui';
 import { MdOutlineArrowRightAlt } from 'react-icons/md';
 
 export const Showcase = () => {
@@ -16,7 +10,7 @@ export const Showcase = () => {
           <h3 className="mb-4 text-xs font-semibold uppercase tracking-widest text-neutral-400">
             SectionHeader
           </h3>
-          <SectionContainer
+          <SectionHeader
             eyebrowNumber="01"
             eyebrowLabel="Sobre mí"
             title="Desarrollador Frontend con pasión por el diseño."
