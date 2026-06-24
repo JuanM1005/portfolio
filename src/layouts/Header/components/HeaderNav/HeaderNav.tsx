@@ -1,3 +1,4 @@
+import toast from 'react-hot-toast';
 import { navItems } from '../../constants/navigation.constants';
 import { NavLink } from '@/components/ui';
 
@@ -20,7 +21,20 @@ export const HeaderNav = ({
         key={item.href}
         href={item.href}
         className={itemClassName}
-        onClick={onItemClick}
+        onClick={(e) => {
+          if (item.pending) {
+            e.preventDefault();
+            toast('Próximamente', {
+              icon: '🚧',
+              style: {
+                fontFamily: 'var(--font-mono)',
+                fontSize: '0.875rem',
+              },
+            });
+            return;
+          }
+          onItemClick?.();
+        }}
       >
         {item.label}
       </NavLink>

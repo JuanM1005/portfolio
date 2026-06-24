@@ -1,3 +1,4 @@
+import { Toaster } from 'react-hot-toast';
 import { Header, Footer } from '@/layouts';
 import { Hero, About, Skills, Projects } from '@/sections';
 
@@ -12,6 +13,7 @@ export const AppLayout = () => {
         <Projects />
       </main>
       <Footer />
+      <Toaster position="bottom-center" />
     </>
   );
 };

@@ -1,4 +1,5 @@
 import { FiMail } from 'react-icons/fi';
+import toast from 'react-hot-toast';
 import { Badge, Button } from '@/components/ui';
 import { HERO_LINKS } from '../../constants/hero.constants';
 
@@ -28,11 +29,20 @@ export const HeroIntro = () => {
         <a href={HERO_LINKS.projects}>
           <Button variant="secondary" size='md'>Ver proyectos</Button>
         </a>
-        <a href={HERO_LINKS.contact}>
-          <Button variant="ghost" size='md' leftIcon={<FiMail size={16} />}>
-            Contactar
-          </Button>
-        </a>
+        <Button
+          variant="ghost"
+          size="md"
+          leftIcon={<FiMail size={16} />}
+          onClick={() => toast('Próximamente', {
+            icon: '🚧',
+            style: {
+              fontFamily: 'var(--font-mono)',
+              fontSize: '0.875rem',
+            },
+          })}
+        >
+          Contactar
+        </Button>
       </div>
     </div>
   );

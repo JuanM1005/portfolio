@@ -7,7 +7,7 @@ export const navItems: NavItem[] = [
   { label: 'Sobre mí', href: '#about' },
   { label: 'Habilidades', href: '#skills' },
   { label: 'Proyectos', href: '#projects' },
-  { label: 'Roadmap', href: '#roadmap' },
-  { label: 'Formación', href: '#education' },
-  { label: 'Contacto', href: '#contact' },
+  { label: 'Roadmap', href: '#roadmap', pending: true },
+  { label: 'Formación', href: '#education', pending: true },
+  { label: 'Contacto', href: '#contact', pending: true },
 ] as const;
