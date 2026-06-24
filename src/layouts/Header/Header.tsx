@@ -1,5 +1,5 @@
 import { Container } from '@/components/ui';
-import { HeaderCta, HeaderLogo, HeaderNav } from './components';
+import { HeaderCta, HeaderLogo, HeaderMobileMenu, HeaderNav } from './components';
 import { useState, useEffect } from 'react';
 import clsx from 'clsx';
 
@@ -33,10 +33,13 @@ export const Header = () => {
           : 'border-b border-transparent',
       )}
     >
-      <Container className="grid grid-cols-[1fr_auto_1fr] items-center py-4">
+      <Container className="flex items-center justify-between py-4 md:grid md:grid-cols-[1fr_auto_1fr]">
         <HeaderLogo className="justify-self-start" />
-        <HeaderNav />
-        <HeaderCta className="justify-self-end" />
+        <HeaderNav className="hidden md:flex" />
+        <div className="flex items-center justify-end gap-4">
+          <HeaderCta className="hidden md:block" />
+          <HeaderMobileMenu className="md:hidden" />
+        </div>
       </Container>
     </header>
   );
