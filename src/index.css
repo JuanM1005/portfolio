@@ -15,10 +15,12 @@
 
   /* --- Paleta neutra (fondos, texto, bordes) --- */
   --color-background: #f7f7f4;
+  --color-section: #f1eded;
   --color-surface: #f8f8f5; /* fondo base, crema cálido */
   --color-surface-card: #ffffff; /* fondo de cards */
-  --color-surface-card-muted: #fcfdfa; /* card ghost — blanco limpio */
+  --color-surface-card-muted: #f4f5f2; /* card ghost — blanco limpio */
   --color-ink: #0a0a0a; /* texto principal */
+  --color-ink-soft: #1f2937; /* texto secundario fuerte */
   --color-ink-muted: #6b7280; /* texto secundario */
   --color-border-soft: #e5e7eb; /* bordes sutiles */
 
@@ -47,11 +49,12 @@
     ============================================================ */
 
 html {
-  scroll-behavior: smooth; /* navegación por anclas suave */
+  scroll-behavior: smooth; /* scroll suave */
+  scroll-padding-top: 4rem;
 }
 
 ::-webkit-scrollbar {
-  width: 8px;
+  width: 10px;
 }
 
 ::-webkit-scrollbar-track {
@@ -75,6 +78,31 @@ body {
   font-family: var(--font-sans);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+/* Barra de progreso — componente ProgressBar */
+.progress-bar {
+  appearance: none;
+  -webkit-appearance: none;
+  border: none;
+  border-radius: 9999px;
+  overflow: hidden;
+  background-color: var(--color-border-soft); /* riel (Firefox + fallback) */
+}
+
+.progress-bar::-webkit-progress-bar {
+  background-color: var(--color-border-soft); /* riel (WebKit/Blink) */
+  border-radius: 9999px;
+}
+
+.progress-bar::-webkit-progress-value {
+  background-color: var(--color-burgundy-500); /* relleno (WebKit/Blink) */
+  border-radius: 9999px;
+}
+
+.progress-bar::-moz-progress-bar {
+  background-color: var(--color-burgundy-500); /* relleno (Firefox) */
+  border-radius: 9999px;
 }
 
 ::selection {
