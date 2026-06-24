@@ -1,4 +1,4 @@
-import type { SectionEyebrowProps } from '../SectionContainer.types';
+import type { SectionEyebrowProps } from '../SectionHeader.types';
 
 export const SectionEyebrow = ({ number, label }: SectionEyebrowProps) => {
   return (

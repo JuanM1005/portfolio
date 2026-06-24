@@ -1,6 +1,6 @@
 import type { HTMLAttributes, PropsWithChildren } from 'react';
 
-export interface SectionContainerProps extends HTMLAttributes<HTMLElement> {
+export interface SectionHeaderProps extends HTMLAttributes<HTMLElement> {
   eyebrowNumber: string;
   eyebrowLabel: string;
   title: string;

@@ -1,17 +1,17 @@
 import clsx from 'clsx';
-import type { SectionContainerProps } from './SectionContainer.types';
+import type { SectionHeaderProps } from './SectionHeader.types';
 import { SectionEyebrow } from './components/SectionEyebrow';
 import { SectionTitle } from './components/SectionTitle';
 import { SectionDescription } from './components/SectionDescription';
 
-export const SectionContainer = ({
+export const SectionHeader = ({
   eyebrowNumber,
   eyebrowLabel,
   title,
   description,
   className,
   ...rest
-}: SectionContainerProps) => {
+}: SectionHeaderProps) => {
   return (
     <header className={clsx('mb-10 md:mb-14', className)} {...rest}>
       {/* Ej: Eyebrow -> "01 ── SOBRE MÍ" */}

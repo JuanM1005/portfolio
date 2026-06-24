@@ -1,24 +1,20 @@
-import type { CardVariant, CardProps } from './Card.types';
+import type { CardProps } from './Card.types';
+import { variantStyles, sizeStyles } from './Card.styles';
 import clsx from 'clsx';
-
-const variantStyles: Record<CardVariant, string> = {
-  default: 'bg-surface-card',
-  ghost: 'bg-surface-card-muted border-accent-500/20',
-};
 
 export const Card = ({
   children,
   variant = 'default',
+  size = 'md',
   className,
   ...rest
 }: CardProps) => {
-  const styles = variantStyles[variant];
-
   return (
     <div
       className={clsx(
-        'rounded-xl border border-border-soft p-6 md:p-8',
-        styles,
+        'rounded-xl border',
+        variantStyles[variant],
+        sizeStyles[size],
         className,
       )}
       {...rest}

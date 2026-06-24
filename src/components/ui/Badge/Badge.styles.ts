@@ -1,7 +1,7 @@
 const styles = {
   badgeVariants: {
     available:
-      'border-status-available/20 bg-status-available/10 text-status-available',
+      'border-status-available/20 bg-status-available/5 text-status-available',
     progress:
       'border-status-progress/20 bg-status-progress/10 text-status-progress',
     upcoming:

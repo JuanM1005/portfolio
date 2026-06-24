@@ -6,6 +6,7 @@ import type { BadgeProps } from './Badge.types';
 export const Badge = ({
   children,
   variant = 'neutral',
+  className,
   withDot = false,
 }: BadgeProps) => {
   return (
@@ -13,6 +14,7 @@ export const Badge = ({
       className={clsx(
         'inline-flex items-center gap-2 rounded-full border font-medium px-3 py-1 text-xs',
         styles.badgeVariants[variant],
+        className,
       )}
     >
       {withDot && <BadgePing variant={variant} />}

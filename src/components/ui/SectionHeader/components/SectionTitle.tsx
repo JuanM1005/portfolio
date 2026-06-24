@@ -1,4 +1,4 @@
-import type { SectionTitleProps } from '../SectionContainer.types';
+import type { SectionTitleProps } from '../SectionHeader.types';
 
 export const SectionTitle = ({ children }: SectionTitleProps) => {
   return (
