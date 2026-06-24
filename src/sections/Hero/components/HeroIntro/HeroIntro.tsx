@@ -26,10 +26,10 @@ export const HeroIntro = () => {
 
       <div className="mt-8 flex flex-wrap gap-3">
         <a href={HERO_LINKS.projects}>
-          <Button variant="secondary">Ver proyectos</Button>
+          <Button variant="secondary" size='md'>Ver proyectos</Button>
         </a>
         <a href={HERO_LINKS.contact}>
-          <Button variant="ghost" leftIcon={<FiMail size={16} />}>
+          <Button variant="ghost" size='md' leftIcon={<FiMail size={16} />}>
             Contactar
           </Button>
         </a>
