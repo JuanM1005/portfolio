@@ -1,5 +1,4 @@
-import { Button } from '@/components/ui';
-import { NavLink } from '../NavLink/NavLink';
+import { Button, NavLink } from '@/components/ui';
 
 const CV_HREF = '/docs/CV_JuanAntonio_AguirreMares.pdf';
 

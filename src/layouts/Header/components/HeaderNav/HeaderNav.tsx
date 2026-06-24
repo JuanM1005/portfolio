@@ -1,6 +1,6 @@
 import clsx from 'clsx';
-import { navItems } from '../../data/navigation.data';
-import { NavLink } from '../NavLink/NavLink';
+import { navItems } from '../../constants/navigation.constants';
+import { NavLink } from '@/components/ui';
 
 interface HeaderNavProps {
   className?: string;
