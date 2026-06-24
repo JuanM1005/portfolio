@@ -14,7 +14,7 @@ export const HeroIntro = () => {
           Juan Antonio Aguirre Mares
         </p>
 
-        <h1 className="mt-4 text-4xl font-semibold tracking-tight text-ink md:text-4xl lg:text-5xl">
+        <h1 className="mt-4 text-3xl font-semibold tracking-tight text-ink md:text-4xl lg:text-5xl">
           Desarrollador <span className="text-burgundy-600">frontend</span> en
           formación, con rumbo a full stack.
         </h1>
