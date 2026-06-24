@@ -1,6 +1,6 @@
+import clsx from 'clsx';
 import { Button, NavLink } from '@/components/ui';
-
-const CV_HREF = '/docs/CV_JuanAntonio_AguirreMares.pdf';
+import { CV_HREF } from '../../constants/navigation.constants';
 
 interface HeaderCtaProps {
   className?: string;
@@ -8,13 +8,10 @@ interface HeaderCtaProps {
 
 export const HeaderCta = ({ className }: HeaderCtaProps) => {
   return (
-    <NavLink
-      href={CV_HREF}
-      download
-      withAnimation={false}
-      className={className}
-    >
-      <Button variant="dark">Descargar CV</Button>
-    </NavLink>
+    <div className={clsx('hidden md:block', className)}>
+      <NavLink href={CV_HREF} download withAnimation={false}>
+        <Button variant="dark">Descargar CV</Button>
+      </NavLink>
+    </div>
   );
 };

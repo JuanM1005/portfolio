@@ -1,22 +1,29 @@
-import clsx from 'clsx';
 import { navItems } from '../../constants/navigation.constants';
 import { NavLink } from '@/components/ui';
 
 interface HeaderNavProps {
   className?: string;
+  itemClassName?: string;
+  ariaLabel?: string;
+  onItemClick?: () => void;
 }
 
-export const HeaderNav = ({ className }: HeaderNavProps) => {
-  return (
-    <nav
-      className={clsx('flex items-center gap-8', className)}
-      aria-label="Navegación principal"
-    >
-      {navItems.map((item) => (
-        <NavLink href={item.href} key={item.href}>
-          {item.label}
-        </NavLink>
-      ))}
-    </nav>
-  );
-};
+export const HeaderNav = ({
+  className = 'hidden md:flex items-center gap-8',
+  itemClassName,
+  ariaLabel = 'Navegación principal',
+  onItemClick,
+}: HeaderNavProps) => (
+  <nav className={className} aria-label={ariaLabel}>
+    {navItems.map((item) => (
+      <NavLink
+        key={item.href}
+        href={item.href}
+        className={itemClassName}
+        onClick={onItemClick}
+      >
+        {item.label}
+      </NavLink>
+    ))}
+  </nav>
+);
