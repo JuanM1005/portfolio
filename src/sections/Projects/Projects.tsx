@@ -1,6 +1,5 @@
 import { SectionLayout, SectionHeader } from '@/components/ui';
-import { ProjectCard } from './components';
-import { PROJECTS } from './constants/projects.constants';
+import { ProjectList } from './components';
 
 export const Projects = () => {
   return (
@@ -12,11 +11,7 @@ export const Projects = () => {
         description="Una selección de proyectos personales y académicos que muestran distintas soluciones, procesos de desarrollo y aplicaciones construidas a partir de necesidades específicas."
       />
 
-      <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
-        {PROJECTS.map((project) => (
-          <ProjectCard key={project.title} {...project} />
-        ))}
-      </div>
+      <ProjectList />
     </SectionLayout>
   );
 };

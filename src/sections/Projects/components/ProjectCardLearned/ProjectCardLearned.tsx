@@ -1,6 +1,6 @@
-interface ProjectCardLearnedProps {
-  learned: string;
-}
+import type { ProjectProps } from '../../types/projects.types';
+
+type ProjectCardLearnedProps = Pick<ProjectProps, 'learned'>;
 
 export const ProjectCardLearned = ({ learned }: ProjectCardLearnedProps) => {
   return (

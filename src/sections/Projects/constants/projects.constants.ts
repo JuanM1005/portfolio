@@ -1,4 +1,4 @@
-import type { Project, ProjectStatus } from '../types/projects.types';
+import type { ProjectProps, ProjectStatus } from '../types/projects.types';
 
 export const STATUS_CONFIG: Record<
   ProjectStatus,
@@ -9,7 +9,7 @@ export const STATUS_CONFIG: Record<
   upcoming: { label: 'Próximo', variant: 'upcoming' },
 };
 
-export const PROJECTS: Project[] = [
+export const PROJECTS: ProjectProps[] = [
   {
     title: 'PetCare',
     description:

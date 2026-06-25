@@ -1,7 +1,4 @@
-interface Collaborator {
-  label: string;
-  url: string;
-}
+import type { Collaborator } from '../../types/projects.types';
 
 interface ProjectCardCollaboratorsProps {
   collaborators: Collaborator[];

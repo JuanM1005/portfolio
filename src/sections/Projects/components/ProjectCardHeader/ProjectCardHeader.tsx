@@ -1,11 +1,8 @@
 import { Badge } from '@/components/ui';
-import type { ProjectStatus } from '../../types/projects.types';
+import type { ProjectProps } from '../../types/projects.types';
 import { STATUS_CONFIG } from '../../constants/projects.constants';
 
-interface ProjectCardHeaderProps {
-  status: ProjectStatus;
-  category: string;
-}
+type ProjectCardHeaderProps = Pick<ProjectProps, 'status' | 'category'>;
 
 export const ProjectCardHeader = ({ status, category }: ProjectCardHeaderProps) => {
   const { label, variant } = STATUS_CONFIG[status];

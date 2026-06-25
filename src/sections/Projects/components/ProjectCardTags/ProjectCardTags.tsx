@@ -1,9 +1,7 @@
 import { FaGithub } from 'react-icons/fa';
+import type { ProjectProps } from '../../types/projects.types';
 
-interface ProjectCardTagsProps {
-  tags: string[];
-  repoUrl?: string;
-}
+type ProjectCardTagsProps = Pick<ProjectProps, 'tags' | 'repoUrl'>;
 
 export const ProjectCardTags = ({ tags, repoUrl }: ProjectCardTagsProps) => {
   return (

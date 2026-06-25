@@ -1,9 +1,9 @@
 import { Card } from '@/components/ui';
-import type { Project } from '../../types/projects.types';
-import { ProjectCardHeader } from './ProjectCardHeader';
-import { ProjectCardCollaborators } from './ProjectCardCollaborators';
-import { ProjectCardLearned } from './ProjectCardLearned';
-import { ProjectCardTags } from './ProjectCardTags';
+import type { ProjectProps } from '../../types/projects.types';
+import { ProjectCardHeader } from '../ProjectCardHeader/ProjectCardHeader';
+import { ProjectCardCollaborators } from '../ProjectCardCollaborators/ProjectCardCollaborators';
+import { ProjectCardLearned } from '../ProjectCardLearned/ProjectCardLearned';
+import { ProjectCardTags } from '../ProjectCardTags/ProjectCardTags';
 
 export const ProjectCard = ({
   title,
@@ -14,7 +14,7 @@ export const ProjectCard = ({
   tags,
   collaborators,
   repoUrl,
-}: Project) => {
+}: ProjectProps) => {
   return (
     <Card variant="default" size="md" className="flex h-full flex-col gap-4 hover:-translate-y-1 transition-all duration-300 hover:shadow-sm">
       <ProjectCardHeader status={status} category={category} />
