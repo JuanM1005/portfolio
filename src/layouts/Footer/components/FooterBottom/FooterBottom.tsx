@@ -18,7 +18,7 @@ export const FooterBottom = () => {
         withAnimation={false}
         className="inline-flex items-center gap-1.5 font-mono text-xs text-ink-muted transition-colors hover:text-ink"
       >
-        Volver arriba
+        Subir
         <FaArrowUp
           size={10}
           className="transition-transform duration-200 group-hover:-translate-y-0.5"

@@ -12,9 +12,11 @@ export const FooterBrand = () => {
         Juan Mares
       </a>
       <p className="text-sm leading-relaxed">
-        Desarrollador Frontend
+        Frontend en formación
         <br />
-        Guadalajara, México
+        Guadalajara, Jal.
+        <br />
+        React · TypeScript · Tailwind
       </p>
     </div>
   );

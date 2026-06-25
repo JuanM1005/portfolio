@@ -6,7 +6,7 @@ export const FooterNav = () => {
   return (
     <nav className="flex flex-col gap-1" aria-label="Navegación del footer">
       <p className="mb-3 font-mono text-xs font-semibold uppercase tracking-[0.2em] text-ink-soft">
-        Navegación
+        Explorar
       </p>
 
       {navItems.map((item) => (
