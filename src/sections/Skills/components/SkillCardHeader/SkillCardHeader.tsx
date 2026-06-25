@@ -14,7 +14,7 @@ export const SkillCardHeader = ({
   return (
     <div className="mb-6 flex items-center justify-between gap-4">
       <div className="flex items-center gap-2.5">
-        <Badge variant={tone} className='rounded-md'>
+        <Badge variant={tone} className="rounded-md">
           {title}
         </Badge>
       </div>

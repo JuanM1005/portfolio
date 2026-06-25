@@ -4,10 +4,14 @@ interface ProjectCardCollaboratorsProps {
   collaborators: Collaborator[];
 }
 
-export const ProjectCardCollaborators = ({ collaborators }: ProjectCardCollaboratorsProps) => {
+export const ProjectCardCollaborators = ({
+  collaborators,
+}: ProjectCardCollaboratorsProps) => {
   return (
     <div className="flex flex-col gap-1.5">
-      <span className="font-mono text-xs text-ink-soft/90">En colaboración</span>
+      <span className="font-mono text-xs text-ink-soft/90">
+        En colaboración
+      </span>
       <div className="flex flex-wrap gap-2">
         {collaborators.map((collab) => (
           <a

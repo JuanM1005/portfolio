@@ -1,6 +1,9 @@
 import type { RoadmapStatus } from '../roadmap.types';
 
-export const statusStyles: Record<RoadmapStatus, { node: string; badge: string }> = {
+export const statusStyles: Record<
+  RoadmapStatus,
+  { node: string; badge: string }
+> = {
   completed: {
     node: 'bg-burgundy-600 text-white border-transparent',
     badge: 'border-burgundy-100 bg-burgundy-50 text-burgundy-600',

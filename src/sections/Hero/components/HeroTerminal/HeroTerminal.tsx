@@ -32,9 +32,7 @@ export const HeroTerminal = () => {
             />
             {' whoami'}
           </p>
-          <p className="mt-1 pl-4">
-            Ing. Informática · CUCEI · Guadalajara
-          </p>
+          <p className="mt-1 pl-4">Ing. Informática · CUCEI · Guadalajara</p>
         </div>
 
         {/* Comando 2: cat stack.txt */}
@@ -48,7 +46,10 @@ export const HeroTerminal = () => {
             />
             {' cat stack.txt'}
           </p>
-          <p className="mt-1 pl-4">Frontend en formación <span className='text-burgundy-500'>→</span> Full Stack</p>
+          <p className="mt-1 pl-4">
+            Frontend en formación <span className="text-burgundy-500">→</span>{' '}
+            Full Stack
+          </p>
           <p className="pl-4">
             <span className="text-emerald-500">base:</span> C++ · Python · SQL
           </p>

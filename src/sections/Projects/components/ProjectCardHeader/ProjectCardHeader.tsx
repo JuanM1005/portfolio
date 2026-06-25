@@ -4,7 +4,10 @@ import { STATUS_CONFIG } from '../../constants/projects.constants';
 
 type ProjectCardHeaderProps = Pick<ProjectProps, 'status' | 'category'>;
 
-export const ProjectCardHeader = ({ status, category }: ProjectCardHeaderProps) => {
+export const ProjectCardHeader = ({
+  status,
+  category,
+}: ProjectCardHeaderProps) => {
   const { label, variant } = STATUS_CONFIG[status];
 
   return (

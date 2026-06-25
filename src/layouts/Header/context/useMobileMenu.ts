@@ -4,13 +4,13 @@ import MobileMenuContext, {
 } from './mobileMenuContext';
 
 const useMobileMenu = (): MobileMenuContextType => {
-    const context = useContext(MobileMenuContext)
+  const context = useContext(MobileMenuContext);
 
-    if (context === undefined) {
-        throw new Error ('useMobileMenu must be used within <MobileMenuProvider>')
-    }
+  if (context === undefined) {
+    throw new Error('useMobileMenu must be used within <MobileMenuProvider>');
+  }
 
-    return context
-}
+  return context;
+};
 
-export default useMobileMenu
+export default useMobileMenu;

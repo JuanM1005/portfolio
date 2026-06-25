@@ -29,10 +29,16 @@ export const RoadmapCard = ({
           size="md"
           className="flex flex-col gap-2 transition-all duration-300 hover:shadow-sm"
         >
-          <RoadmapHeader eyebrowNumber={eyebrowNumber} title={title} status={status} />
+          <RoadmapHeader
+            eyebrowNumber={eyebrowNumber}
+            title={title}
+            status={status}
+          />
 
           {description && (
-            <p className="text-sm leading-relaxed text-ink-muted">{description}</p>
+            <p className="text-sm leading-relaxed text-ink-muted">
+              {description}
+            </p>
           )}
 
           {isCurrent && (

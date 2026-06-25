@@ -22,24 +22,29 @@ export const HeroIntro = () => {
       </div>
 
       <p className="mt-6 max-w-xl text-base text-justify leading-relaxed text-ink-muted md:text-lg">
-        Desarrollador en formación, disciplinado y comprometido con la mejora constante y el aprendizaje continuo.
+        Desarrollador en formación, disciplinado y comprometido con la mejora
+        constante y el aprendizaje continuo.
       </p>
 
       <div className="mt-8 flex flex-wrap gap-3">
         <a href={HERO_LINKS.projects}>
-          <Button variant="secondary" size='md'>Ver proyectos</Button>
+          <Button variant="secondary" size="md">
+            Ver proyectos
+          </Button>
         </a>
         <Button
           variant="ghost"
           size="md"
           leftIcon={<FiMail size={16} />}
-          onClick={() => toast('Próximamente', {
-            icon: '🚧',
-            style: {
-              fontFamily: 'var(--font-mono)',
-              fontSize: '0.875rem',
-            },
-          })}
+          onClick={() =>
+            toast('Próximamente', {
+              icon: '🚧',
+              style: {
+                fontFamily: 'var(--font-mono)',
+                fontSize: '0.875rem',
+              },
+            })
+          }
         >
           Contactar
         </Button>

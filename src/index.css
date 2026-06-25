@@ -42,8 +42,8 @@
   --color-status-available: #10b981; /* verde — disponible / completado */
   --color-status-progress: #f59e0b; /* ámbar — en desarrollo */
   --color-status-upcoming: #a122e0; /* morado — próximamente */
-  --color-status-next: #3b82f6;     /* azul — siguiente */
-  --color-status-goal: #9f1239;     /* vino — meta */
+  --color-status-next: #3b82f6; /* azul — siguiente */
+  --color-status-goal: #9f1239; /* vino — meta */
 }
 
 /* ============================================================

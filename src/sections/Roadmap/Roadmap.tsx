@@ -3,10 +3,7 @@ import { RoadmapList } from './components';
 
 export const Roadmap = () => {
   return (
-    <SectionLayout
-      id="roadmap"
-      containerClassName="py-16 md:py-24"
-    >
+    <SectionLayout id="roadmap" containerClassName="py-16 md:py-24">
       <SectionHeader
         eyebrowNumber="04"
         eyebrowLabel="Roadmap full stack"

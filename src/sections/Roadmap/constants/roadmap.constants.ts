@@ -32,8 +32,7 @@ export const ROADMAPS: RoadmapProps[] = [
   {
     eyebrowNumber: '03',
     title: 'Consumo de APIs REST',
-    description:
-      'Fetch, datos asíncronos, manejo de estados de carga y error.',
+    description: 'Fetch, datos asíncronos, manejo de estados de carga y error.',
     status: 'next',
   },
   {
@@ -46,8 +45,7 @@ export const ROADMAPS: RoadmapProps[] = [
   {
     eyebrowNumber: '05',
     title: 'Express & APIs propias',
-    description:
-      'Construcción de endpoints, rutas y lógica de servidor.',
+    description: 'Construcción de endpoints, rutas y lógica de servidor.',
     status: 'upcoming',
   },
   {

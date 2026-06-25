@@ -3,9 +3,16 @@ import type { RoadmapProps } from '../../roadmap.types';
 import { STATUS_CONFIG } from '../../constants/roadmap.constants';
 import { statusStyles } from '../../constants/roadmap.styles';
 
-type RoadmapHeaderProps = Pick<RoadmapProps, 'eyebrowNumber' | 'title' | 'status'>;
+type RoadmapHeaderProps = Pick<
+  RoadmapProps,
+  'eyebrowNumber' | 'title' | 'status'
+>;
 
-export const RoadmapHeader = ({ eyebrowNumber, title, status }: RoadmapHeaderProps) => {
+export const RoadmapHeader = ({
+  eyebrowNumber,
+  title,
+  status,
+}: RoadmapHeaderProps) => {
   const { label } = STATUS_CONFIG[status];
   const { badge } = statusStyles[status];
 

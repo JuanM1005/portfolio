@@ -5,7 +5,7 @@ import { MobileMenuProvider } from './context/MobileMenuProvider';
 import { useHandleScroll } from './hooks/useHandleScroll';
 
 export const Header = () => {
-  const { isScrolled } = useHandleScroll(50)
+  const { isScrolled } = useHandleScroll(50);
 
   return (
     <MobileMenuProvider>

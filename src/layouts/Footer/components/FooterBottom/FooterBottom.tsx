@@ -5,8 +5,10 @@ export const FooterBottom = () => {
   const currentYear = new Date().getFullYear();
 
   return (
-    <Container className="mt-10 flex gap-3 items-center justify-between border-t border-border-soft pt-6
-    ">
+    <Container
+      className="mt-10 flex gap-3 items-center justify-between border-t border-border-soft pt-6
+    "
+    >
       <p className="font-mono text-xs text-ink-muted">
         &copy; {currentYear} Juan Antonio Aguirre Mares
       </p>

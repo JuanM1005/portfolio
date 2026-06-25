@@ -10,12 +10,17 @@ type RoadmapNodeProps = Pick<RoadmapProps, 'status'> & {
 
 const NodeIcon = ({ status }: Pick<RoadmapProps, 'status'>) => {
   if (status === 'completed') return <FaCheck className="size-3.5" />;
-  if (status === 'inProgress') return <span className="size-2.5 rounded-full bg-burgundy-600" />;
+  if (status === 'inProgress')
+    return <span className="size-2.5 rounded-full bg-burgundy-600" />;
   if (status === 'goal') return <FaFlag className="size-3" />;
   return <span className="size-2 rounded-full bg-ink-muted/40" />;
 };
 
-export const RoadmapNode = ({ status, isFirst = false, isLast = false }: RoadmapNodeProps) => {
+export const RoadmapNode = ({
+  status,
+  isFirst = false,
+  isLast = false,
+}: RoadmapNodeProps) => {
   const { node } = statusStyles[status];
 
   return (

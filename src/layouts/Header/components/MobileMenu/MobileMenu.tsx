@@ -23,7 +23,11 @@ export const MobileMenu = () => {
           className={`block transition-transform duration-300 ${isOpen ? 'rotate-90' : 'rotate-0'}`}
         >
           {isOpen ? (
-            <FiX size={18} aria-hidden="true" className="text-burgundy-500/80" />
+            <FiX
+              size={18}
+              aria-hidden="true"
+              className="text-burgundy-500/80"
+            />
           ) : (
             <FiMenu size={18} aria-hidden="true" className="text-ink-soft/80" />
           )}
