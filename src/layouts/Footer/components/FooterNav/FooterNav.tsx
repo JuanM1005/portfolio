@@ -8,7 +8,7 @@ export const FooterNav = () => {
       className='flex flex-col gap-1'
       aria-label="Navegación del footer"
     >
-      <p className="mb-3 font-mono text-xs font-semibold uppercase tracking-[0.2em] text-ink-muted">
+      <p className="mb-3 font-mono text-xs font-semibold uppercase tracking-[0.2em] text-ink-soft">
         Navegación
       </p>
 
@@ -16,7 +16,7 @@ export const FooterNav = () => {
         <NavLink
           href={item.href}
           key={item.href}
-          className="text-sm"
+          className="inline-flex items-center gap-2 text-sm text-ink-muted transition-colors duration-200 hover:text-ink"
           onClick={(e) => {
             if (item.pending) {
               e.preventDefault();
