@@ -1,3 +1,3 @@
-import profilePhoto from './profile-photo-juan.webp';
+import profilePhoto from './profile-photo.png';
 
 export const PROFILE_PHOTO = profilePhoto;
