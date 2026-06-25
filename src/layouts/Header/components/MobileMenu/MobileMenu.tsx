@@ -49,8 +49,9 @@ export const MobileMenu = () => {
                 download
                 withAnimation={false}
                 onClick={closeMenu}
+                className="block w-full"
               >
-                <Button variant="dark" className="w-full">
+                <Button variant="dark" fullWidth>
                   Descargar CV
                 </Button>
               </NavLink>
