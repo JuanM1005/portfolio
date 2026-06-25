@@ -11,8 +11,8 @@ export const Projects = () => {
       <SectionHeader
         eyebrowNumber="03"
         eyebrowLabel="Proyectos"
-        title="Proyectos desarrollados con enfoque práctico y funcional."
-        description="Una selección de proyectos personales y académicos que muestran distintas soluciones, procesos de desarrollo y aplicaciones construidas a partir de necesidades específicas."
+        title="Proyectos donde convierto aprendizaje en interfaces funcionales."
+        description="Una selección de trabajos personales y académicos que muestran cómo resuelvo necesidades concretas, organizo componentes, consumo datos y documento lo aprendido en cada proceso."
       />
 
       <ProjectList />

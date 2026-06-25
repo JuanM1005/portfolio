@@ -13,44 +13,44 @@ export const PROJECTS: ProjectProps[] = [
   {
     title: 'PetCare',
     description:
-      'Aplicación web para la gestión de clínicas veterinarias pequeñas y medianas. Incluye gestión de pacientes, citas e historial clínico, con arquitectura feature-based y visión PWA offline-first.',
+      'Aplicación web para clínicas veterinarias pequeñas y medianas, pensada para organizar pacientes, citas e historial clínico con una base frontend escalable.',
     status: 'inProgress',
     category: 'Académico',
     learned:
-      'Arquitectura feature-based, sistema de diseño con Tailwind CSS v4 y preparación para PWA offline-first.',
+      'Organización feature-based, componentes reutilizables con Tailwind CSS v4 y planificación de una experiencia PWA offline-first.',
     tags: ['React', 'TypeScript', 'Tailwind', 'Vite', 'PWA'],
     repoUrl: 'https://github.com/JuanM1005/petcare-frontend-demo',
   },
   {
     title: 'QuickNotes',
     description:
-      'App de notas desarrollada con React, TypeScript y Tailwind CSS, con búsqueda, filtros, sidebar y persistencia en localStorage.',
+      'Aplicación de notas con búsqueda, filtros, sidebar y persistencia local, enfocada en una experiencia simple para capturar y encontrar información rápido.',
     status: 'completed',
     category: 'Personal',
     learned:
-      'Gestión de estado en React, diseño de UI con Tailwind CSS v4 y persistencia de datos en localStorage.',
+      'Gestión de estado en React, modelado de interacciones de UI y persistencia de datos con localStorage.',
     tags: ['React', 'TypeScript', 'Tailwind', 'Vite', 'Bun'],
     repoUrl: 'https://github.com/JuanM1005/QuickNotes',
   },
   {
     title: 'FrameLix',
     description:
-      'Aplicación SPA de catálogo de películas que consume la API de TMDB, con detalle por película, enrutamiento con React Router y despliegue en Netlify.',
+      'SPA de catálogo de películas que consume la API de TMDB, permite consultar detalles por película y organiza la navegación con React Router.',
     status: 'completed',
     category: 'Académico',
     learned:
-      'Consumo de APIs REST, enrutamiento con React Router, trabajo colaborativo con Git y despliegue en Netlify.',
+      'Consumo de APIs REST, manejo de rutas, colaboración con Git y despliegue de una aplicación frontend en Netlify.',
     tags: ['React', 'Vite', 'React Router', 'Axios', 'TMDB API'],
     repoUrl: 'https://github.com/JuanM1005/practica7-react-peliculas',
   },
   {
     title: 'VetCare Software',
     description:
-      'Sistema integral de gestión veterinaria con interfaz gráfica de escritorio: citas, clientes, pacientes, historial médico, control de vacunación e inventario.',
+      'Sistema de escritorio para gestión veterinaria: citas, clientes, pacientes, historial médico, vacunación e inventario en un flujo centralizado.',
     status: 'completed',
     category: 'Académico',
     learned:
-      'Modelado de datos relacional, diseño de interfaces de escritorio y trabajo en equipo con Git.',
+      'Modelado de datos relacional, diseño de interfaces de escritorio y coordinación de trabajo en equipo con Git.',
     tags: ['Python', 'CustomTkinter', 'PostgreSQL', 'SQLite'],
     collaborators: [
       { label: '@Darklong15', url: 'https://github.com/Darklong15' },
@@ -61,11 +61,11 @@ export const PROJECTS: ProjectProps[] = [
   {
     title: 'TechNest Store',
     description:
-      'Sistema de administración para una tienda de tecnología desarrollado en C++ con Programación Orientada a Objetos para gestionar inventario, proveedores y pedidos.',
+      'Sistema de administración para una tienda de tecnología, desarrollado en C++ con POO para gestionar inventario, proveedores y pedidos.',
     status: 'completed',
     category: 'Académico',
     learned:
-      'Programación orientada a objetos, modularización y diseño de sistemas de gestión.',
+      'Aplicación de POO, separación de responsabilidades y diseño básico de sistemas de gestión.',
     tags: ['C++', 'POO', 'Gestión'],
     collaborators: [
       { label: '@Lancercrack25', url: 'https://github.com/Lancercrack25' },
@@ -75,10 +75,11 @@ export const PROJECTS: ProjectProps[] = [
   {
     title: 'Estructuras de Datos',
     description:
-      'Colección de estructuras de datos (árboles, listas, pilas, colas, matrices) y algoritmos de ordenamiento implementados desde cero para optimizar la lógica computacional.',
+      'Colección de estructuras de datos y algoritmos implementados desde cero para reforzar lógica, recorrido de datos y razonamiento algorítmico.',
     status: 'completed',
     category: 'Académico',
-    learned: 'Fundamentos de eficiencia algorítmica y lógica computacional.',
+    learned:
+      'Comprensión práctica de eficiencia, organización de datos y solución de problemas desde fundamentos.',
     tags: ['C++', 'Algoritmos', 'Lógica'],
     repoUrl: 'https://github.com/JuanM1005/Estructura-de-datosj',
   },

@@ -12,13 +12,13 @@ export const Skills = () => {
       <SectionHeader
         eyebrowNumber="02"
         eyebrowLabel="Habilidades"
-        title="Lo que domino hoy, y lo que estoy aprendiendo."
-        description="Separo mi base académica de lo que apenas estoy construyendo. Honestidad ante todo: el progreso de aprendizaje es autoevaluado y está en práctica activa."
+        title="Herramientas que uso, bases que sostienen mi aprendizaje."
+        description="Mi perfil combina fundamentos de programación con práctica frontend moderna. Distingo lo que ya he aplicado en proyectos de lo que sigo reforzando, para mostrar un avance claro y honesto."
       />
 
       <div className="space-y-10">
         <div>
-          <SkillsHeader title="Hard skills" />
+          <SkillsHeader title="Habilidades técnicas" />
           <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
             <SkillsBaseCard />
             <SkillsLearningCard />
@@ -26,7 +26,7 @@ export const Skills = () => {
         </div>
 
         <div>
-          <SkillsHeader title="Soft skills" />
+          <SkillsHeader title="Forma de trabajo" />
           <SoftSkillsCard />
         </div>
       </div>

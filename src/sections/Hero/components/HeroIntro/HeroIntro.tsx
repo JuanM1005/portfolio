@@ -7,7 +7,7 @@ export const HeroIntro = () => {
   return (
     <div className="flex flex-col items-start">
       <Badge variant="available" withDot>
-        Disponible para trabajar
+        Disponible para colaborar
       </Badge>
 
       <div className="font-mono">
@@ -17,13 +17,15 @@ export const HeroIntro = () => {
 
         <h1 className="mt-4 text-3xl font-semibold tracking-tight text-ink md:text-4xl lg:text-5xl">
           Desarrollador <span className="text-burgundy-600">frontend</span> en
-          formación, con rumbo a full stack.
+          formación, construyendo interfaces claras y bien estructuradas.
         </h1>
       </div>
 
       <p className="mt-6 max-w-xl text-base text-justify leading-relaxed text-ink-muted md:text-lg">
-        Desarrollador en formación, disciplinado y comprometido con la mejora
-        constante y el aprendizaje continuo.
+        Trabajo con React, TypeScript y Tailwind CSS mientras fortalezco mi
+        camino hacia full stack. Me enfoco en crear experiencias limpias,
+        responsivas y accesibles, con atención al detalle y disposición para
+        aportar en proyectos reales.
       </p>
 
       <div className="mt-8 flex flex-wrap gap-3">
@@ -32,6 +34,7 @@ export const HeroIntro = () => {
             Ver proyectos
           </Button>
         </a>
+
         <Button
           variant="ghost"
           size="md"

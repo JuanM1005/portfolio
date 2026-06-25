@@ -48,14 +48,14 @@ export const HeroTerminal = () => {
           </p>
           <p className="mt-1 pl-4">
             Frontend en formación <span className="text-burgundy-500">→</span>{' '}
-            Full Stack
+            camino full stack
           </p>
           <p className="pl-4">
             <span className="text-emerald-500">base:</span> C++ · Python · SQL
           </p>
           <p className="pl-4">
-            <span className="text-status-progress">aprendiendo:</span> React ·
-            TS · Tailwind
+            <span className="text-status-progress">en práctica:</span> React ·
+            TypeScript · Tailwind
           </p>
         </div>
 

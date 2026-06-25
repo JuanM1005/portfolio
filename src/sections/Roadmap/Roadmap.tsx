@@ -7,8 +7,8 @@ export const Roadmap = () => {
       <SectionHeader
         eyebrowNumber="04"
         eyebrowLabel="Roadmap full stack"
-        title="Construyendo mi camino como desarrollador."
-        description="Una ruta de aprendizaje y desarrollo enfocada en fortalecer mis habilidades frontend, incorporar bases sólidas de backend y construir soluciones completas a través de proyectos prácticos, personales y académicos."
+        title="Un camino de crecimiento con pasos concretos."
+        description="Mi ruta actual prioriza fortalecer frontend, sumar backend con criterio y construir proyectos completos donde cada nueva tecnología tenga una aplicación práctica y medible."
       />
 
       <RoadmapList />

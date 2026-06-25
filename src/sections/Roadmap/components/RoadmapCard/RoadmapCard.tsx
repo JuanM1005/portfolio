@@ -44,7 +44,7 @@ export const RoadmapCard = ({
           {isCurrent && (
             <p className="flex items-center gap-2 text-xs font-medium text-burgundy-600">
               <span className="size-1.5 rounded-full bg-burgundy-600" />
-              Estás aquí
+              En enfoque actual
             </p>
           )}
         </Card>

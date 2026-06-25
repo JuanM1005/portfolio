@@ -9,5 +9,5 @@ export const ABOUT_FACTS: AboutFact[] = [
   { label: 'Enfoque', value: 'Frontend → Full Stack' },
   { label: 'Base', value: BASE_STACK.join(' · ') },
   { label: 'Aprendiendo', value: 'React · TypeScript' },
-  { label: 'Estatus', value: 'Buscando trabajo' },
+  { label: 'Estatus', value: 'Disponible' },
 ];

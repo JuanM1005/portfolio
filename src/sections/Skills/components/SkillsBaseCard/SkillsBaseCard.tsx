@@ -6,8 +6,8 @@ export const SkillsBaseCard = () => {
   return (
     <Card variant="ghost" size="md">
       <SkillCardHeader
-        title="Base sólida"
-        eyebrow="Proyectos reales"
+        title="Base aplicada"
+        eyebrow="Fundamentos"
         tone="available"
       />
 

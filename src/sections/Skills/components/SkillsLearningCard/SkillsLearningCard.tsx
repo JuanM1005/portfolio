@@ -9,7 +9,7 @@ export const SkillsLearningCard = () => {
   return (
     <Card variant="ghost" size="md">
       <SkillCardHeader
-        title="Aprendiendo ahora"
+        title="Frontend actual"
         eyebrow="En práctica"
         tone="progress"
       />
@@ -35,7 +35,7 @@ export const SkillsLearningCard = () => {
 
       <div className="mt-6 border-t border-border-soft pt-6">
         <p className="mb-3 font-mono text-[10px] font-medium uppercase tracking-[0.2em] text-ink-muted">
-          Siguiente en el roadmap
+          Próximos pasos
         </p>
         <ul className="flex flex-wrap gap-2">
           {ROADMAP_NEXT.map((skill) => (
