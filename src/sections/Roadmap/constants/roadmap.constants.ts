@@ -27,13 +27,13 @@ export const ROADMAPS: RoadmapProps[] = [
     title: 'React + TypeScript + Tailwind',
     description:
       'Componentes, estado, tipado estático y construcción de interfaces consistentes.',
-    status: 'inProgress',
+    status: 'completed',
   },
   {
     eyebrowNumber: '03',
     title: 'Consumo de APIs REST',
     description: 'Fetch, datos asíncronos, manejo de estados de carga y error.',
-    status: 'next',
+    status: 'inProgress',
   },
   {
     eyebrowNumber: '04',

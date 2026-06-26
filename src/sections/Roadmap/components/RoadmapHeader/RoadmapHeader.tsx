@@ -20,7 +20,7 @@ export const RoadmapHeader = ({
     <header className="flex items-start justify-between gap-4">
       {/* Número + título */}
       <div className="flex items-baseline gap-2">
-        <span className="font-mono text-[10px] font-medium text-ink-muted">
+        <span className="font-mono text-[10px] font-medium text-burgundy-600">
           {eyebrowNumber}
         </span>
         <h3 className="font-mono text-base font-bold text-ink">{title}</h3>
