@@ -35,9 +35,9 @@ export const MobileMenu = () => {
       </Button>
 
       {isOpen && (
-        <div
+        <header
           id="mobile-menu"
-          className="absolute inset-x-0 top-full border-b border-border-soft bg-surface/95 backdrop-blur"
+          className="absolute inset-x-0 top-full border-b border-border-soft bg-surface/80 backdrop-blur transition-colors"
         >
           <div className="mx-auto flex w-full max-w-6xl flex-col px-6 py-4">
             <HeaderNav
@@ -66,7 +66,7 @@ export const MobileMenu = () => {
               </NavLink>
             </div>
           </div>
-        </div>
+        </header>
       )}
     </div>
   );
