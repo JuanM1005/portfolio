@@ -7,3 +7,5 @@ export * from './Badge/Badge';
 export * from './Button/Button';
 export * from './Card/Card';
 export * from './CursorBlink/CursorBlink';
+export * from './Input/Input'
+export * from './Textarea/Textarea'
