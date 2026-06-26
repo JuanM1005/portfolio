@@ -1,5 +1,5 @@
 import { FaGithub } from 'react-icons/fa';
-import type { ProjectProps } from '../../types/projects.types';
+import type { ProjectProps } from '../../projects.types';
 
 type ProjectCardTagsProps = Pick<ProjectProps, 'tags' | 'repoUrl'>;
 
@@ -22,7 +22,7 @@ export const ProjectCardTags = ({ tags, repoUrl }: ProjectCardTagsProps) => {
           href={repoUrl}
           target="_blank"
           rel="noreferrer"
-          className="mt-auto inline-flex items-center gap-2 font-mono text-sm text-ink-soft transition-colors duration-200 hover:text-burgundy-500"
+          className="mt-auto inline-flex items-center gap-2 rounded-sm font-mono text-sm text-ink-soft transition-colors duration-200 hover:text-burgundy-500 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-burgundy-600"
         >
           <FaGithub size={16} aria-hidden="true" />
           GitHub

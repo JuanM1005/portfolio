@@ -1,4 +1,4 @@
-import type { ProjectProps, ProjectStatus } from '../types/projects.types';
+import type { ProjectProps, ProjectStatus } from '../projects.types';
 
 export const STATUS_CONFIG: Record<
   ProjectStatus,

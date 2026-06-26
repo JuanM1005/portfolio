@@ -1,5 +1,5 @@
 import { Card } from '@/components/ui';
-import type { ProjectProps } from '../../types/projects.types';
+import type { ProjectProps } from '../../projects.types';
 import { ProjectCardHeader } from '../ProjectCardHeader/ProjectCardHeader';
 import { ProjectCardCollaborators } from '../ProjectCardCollaborators/ProjectCardCollaborators';
 import { ProjectCardLearned } from '../ProjectCardLearned/ProjectCardLearned';

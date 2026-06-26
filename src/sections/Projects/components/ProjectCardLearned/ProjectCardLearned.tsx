@@ -1,4 +1,4 @@
-import type { ProjectProps } from '../../types/projects.types';
+import type { ProjectProps } from '../../projects.types';
 
 type ProjectCardLearnedProps = Pick<ProjectProps, 'learned'>;
 
