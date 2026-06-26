@@ -1,6 +1,6 @@
 import { Toaster } from 'react-hot-toast';
 import { Header, Footer } from '@/layouts';
-import { Hero, About, Skills, Projects, Roadmap } from '@/sections';
+import { Hero, About, Skills, Projects, Roadmap, Education } from '@/sections';
 
 export const AppLayout = () => {
   return (
@@ -12,6 +12,7 @@ export const AppLayout = () => {
         <Skills />
         <Projects />
         <Roadmap />
+        <Education />
       </main>
       <Footer />
       <Toaster position="bottom-center" />
