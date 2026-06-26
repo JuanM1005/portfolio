@@ -10,7 +10,7 @@ export const Education = () => {
     >
       <SectionHeader
         eyebrowNumber="05"
-        eyebrowLabel="Formación"
+        eyebrowLabel="Educación"
         title="Formación técnica aplicada a proyectos reales."
         description="Mi aprendizaje combina la base académica de Ingeniería Informática con práctica constante en desarrollo frontend. Busco que cada curso, proyecto y tecnología se traduzca en mejores decisiones de código, estructura e interfaz."
       />
