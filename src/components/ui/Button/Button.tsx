@@ -1,6 +1,6 @@
 import clsx from 'clsx';
 import type { ButtonProps } from './Button.types';
-import { sizeStyles, variantStyles } from './Button.styles';
+import { sizeStyles, variantStyles, focusRingStyles } from './Button.styles';
 
 export const Button = ({
   children,
@@ -14,9 +14,10 @@ export const Button = ({
   return (
     <button
       className={clsx(
-        'inline-flex items-center justify-center gap-1 rounded-md font-medium cursor-pointer transition-all duration-300 hover:scale-95 active:scale-95 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-burgundy-600 focus-visible:ring-offset-0 disabled:cursor-not-allowed disabled:opacity-50',
+        'inline-flex items-center justify-center gap-1 rounded-md font-medium cursor-pointer transition-all duration-300 hover:scale-95 active:scale-95 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-0 disabled:cursor-not-allowed disabled:opacity-50',
         sizeStyles[size],
         variantStyles[variant],
+        focusRingStyles[variant],
         fullWidth && 'w-full',
         className,
       )}

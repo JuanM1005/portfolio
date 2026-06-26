@@ -14,3 +14,10 @@ export const variantStyles: Record<ButtonVariant, string> = {
     'bg-surface-card text-ink border border-border-soft hover:bg-neutral-50 active:bg-neutral-100',
   dark: 'bg-ink text-white hover:bg-neutral-800 active:bg-neutral-900',
 };
+
+export const focusRingStyles: Record<ButtonVariant, string> = {
+  primary: 'focus-visible:ring-burgundy-600',
+  secondary: 'focus-visible:ring-burgundy-50',
+  ghost: 'focus-visible:ring-burgundy-600',
+  dark: 'focus-visible:ring-burgundy-600',
+};

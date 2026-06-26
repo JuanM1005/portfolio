@@ -1,6 +1,6 @@
 import clsx from 'clsx';
 import type { NavLinkProps } from './NavLink.types';
-import { variantStyles } from './NavLink.styles';
+import { variantStyles, focusRingStyles } from './NavLink.styles';
 
 export const NavLink = ({
   href,
@@ -17,7 +17,7 @@ export const NavLink = ({
       className={clsx(
         'relative inline-flex h-8 cursor-pointer items-center px-1 font-sans text-sm transition-colors duration-200',
         withFocusRing
-          ? 'rounded-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-burgundy-600'
+          ? clsx('rounded-sm focus-visible:outline-none focus-visible:ring-2', focusRingStyles[variant])
           : 'group focus-visible:outline-none',
         variantStyles[variant],
         withAnimation &&
