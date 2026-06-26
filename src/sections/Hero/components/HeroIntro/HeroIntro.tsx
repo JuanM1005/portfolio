@@ -1,7 +1,12 @@
+import clsx from 'clsx';
 import { FiMail } from 'react-icons/fi';
-import toast from 'react-hot-toast';
-import { Badge, Button } from '@/components/ui';
+import { Badge, NavLink } from '@/components/ui';
+import { variantStyles as buttonVariantStyles } from '@/components/ui/Button/Button.styles';
 import { HERO_LINKS } from '../../constants/hero.constants';
+
+const buttonShell =
+  'justify-center gap-1 font-medium hover:scale-95 active:scale-95 ' +
+  'h-auto! rounded-md! px-4! py-2! transition-all! duration-300!';
 
 export const HeroIntro = () => {
   return (
@@ -29,35 +34,22 @@ export const HeroIntro = () => {
       </p>
 
       <div className="mt-8 flex flex-wrap gap-3">
-        <a
+        <NavLink
           href={HERO_LINKS.projects}
-          className="group focus-visible:outline-none"
+          withAnimation={false}
+          className={clsx(buttonShell, buttonVariantStyles.secondary, 'text-white!', 'focus-visible:ring-ink-soft!')}
         >
-          <Button
-            variant="secondary"
-            size="md"
-            className="group-focus-visible:outline-none group-focus-visible:ring-2 group-focus-visible:ring-burgundy-600"
-          >
-            Ver proyectos
-          </Button>
-        </a>
+          Ver proyectos
+        </NavLink>
 
-        <Button
-          variant="ghost"
-          size="md"
-          leftIcon={<FiMail size={16} />}
-          onClick={() =>
-            toast('Próximamente', {
-              icon: '🚧',
-              style: {
-                fontFamily: 'var(--font-mono)',
-                fontSize: '0.875rem',
-              },
-            })
-          }
+        <NavLink
+          href={HERO_LINKS.contact}
+          withAnimation={false}
+          className={clsx(buttonShell, buttonVariantStyles.ghost)}
         >
+          <FiMail size={16} aria-hidden="true" />
           Contactar
-        </Button>
+        </NavLink>
       </div>
     </div>
   );
