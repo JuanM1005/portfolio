@@ -56,7 +56,11 @@ export const MobileMenu = () => {
                 onClick={closeMenu}
                 className="block w-full"
               >
-                <Button variant="dark" fullWidth className="group-focus-visible:outline-none group-focus-visible:ring-2 group-focus-visible:ring-burgundy-600">
+                <Button
+                  variant="dark"
+                  fullWidth
+                  className="group-focus-visible:outline-none group-focus-visible:ring-2 group-focus-visible:ring-burgundy-600"
+                >
                   Descargar CV
                 </Button>
               </NavLink>

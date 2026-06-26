@@ -8,6 +8,6 @@ export const navItems: NavItem[] = [
   { label: 'Habilidades', href: '#skills' },
   { label: 'Proyectos', href: '#projects' },
   { label: 'Roadmap', href: '#roadmap' },
-  { label: 'Formación', href: '#education'},
+  { label: 'Formación', href: '#education' },
   { label: 'Contacto', href: '#contact', pending: true },
 ] as const;

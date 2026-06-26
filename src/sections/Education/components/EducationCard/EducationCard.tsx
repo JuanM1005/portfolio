@@ -18,7 +18,9 @@ export const EducationCard = ({
         <EducationHeader eyebrow={eyebrow} title={title} subtitle={subtitle} />
 
         {description && (
-          <p className="text-sm leading-relaxed text-ink-muted">{description}</p>
+          <p className="text-sm leading-relaxed text-ink-muted">
+            {description}
+          </p>
         )}
       </Card>
     </li>

@@ -45,7 +45,8 @@ export const ROADMAPS: RoadmapProps[] = [
   {
     eyebrowNumber: '05',
     title: 'Express & APIs propias',
-    description: 'Construcción de endpoints, rutas, validaciones y lógica de servidor.',
+    description:
+      'Construcción de endpoints, rutas, validaciones y lógica de servidor.',
     status: 'upcoming',
   },
   {
