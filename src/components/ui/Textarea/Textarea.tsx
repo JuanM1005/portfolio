@@ -18,17 +18,10 @@ export const Textarea = ({
 
   return (
     <div className={clsx('flex flex-col gap-1', fullWidth && 'w-full')}>
-      <label
-        htmlFor={textareaId}
-        className="font-mono text-[11px] font-medium uppercase text-ink-soft/80 transition-colors peer-focus:text-burgundy-500"
-      >
-        {label}
-      </label>
-
       <textarea
         id={textareaId}
         className={clsx(
-          'peer w-full min-h-52 rounded-lg border border-border-soft bg-surface px-3 py-3 text-sm text-ink transition-[border-color,box-shadow] placeholder:text-ink-muted focus-visible:border-burgundy-500 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-burgundy-500 disabled:cursor-not-allowed disabled:resize-none disabled:bg-surface-card-muted disabled:opacity-60',
+          'order-2 peer w-full min-h-52 rounded-lg border border-border-soft bg-surface px-3 py-3 text-sm text-ink transition-[border-color,box-shadow] placeholder:text-ink-muted focus-visible:border-burgundy-600 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-burgundy-100 disabled:cursor-not-allowed disabled:resize-none disabled:bg-surface-card-muted disabled:opacity-60',
           resize ? 'resize-y' : 'resize-none',
           error &&
             'border-red-500 focus-visible:border-red-500 focus-visible:ring-red-500/40',
@@ -41,8 +34,15 @@ export const Textarea = ({
         {...rest}
       ></textarea>
 
+      <label
+        htmlFor={textareaId}
+        className="order-1 font-mono text-[11px] font-medium uppercase text-ink-soft/80 transition-colors peer-focus:text-burgundy-600"
+      >
+        {label}
+      </label>
+
       {(error || hint || Boolean(maxLength)) && (
-        <div className="flex items-center justify-between">
+        <div className="order-3 mt-2 flex items-center justify-between">
           {error ? (
             <span
               id={`${textareaId}-description`}
