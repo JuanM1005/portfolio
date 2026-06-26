@@ -37,7 +37,12 @@ export const HeroIntro = () => {
         <NavLink
           href={HERO_LINKS.projects}
           withAnimation={false}
-          className={clsx(buttonShell, buttonVariantStyles.secondary, 'text-white!', 'focus-visible:ring-ink-soft!')}
+          className={clsx(
+            buttonShell,
+            buttonVariantStyles.secondary,
+            'text-white!',
+            'focus-visible:ring-ink-soft!',
+          )}
         >
           Ver proyectos
         </NavLink>

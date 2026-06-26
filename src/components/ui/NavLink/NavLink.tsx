@@ -17,7 +17,10 @@ export const NavLink = ({
       className={clsx(
         'relative inline-flex h-8 cursor-pointer items-center px-1 font-sans text-sm transition-colors duration-200',
         withFocusRing
-          ? clsx('rounded-sm focus-visible:outline-none focus-visible:ring-2', focusRingStyles[variant])
+          ? clsx(
+              'rounded-sm focus-visible:outline-none focus-visible:ring-2',
+              focusRingStyles[variant],
+            )
           : 'group focus-visible:outline-none',
         variantStyles[variant],
         withAnimation &&

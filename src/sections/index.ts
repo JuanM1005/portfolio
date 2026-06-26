@@ -4,4 +4,4 @@ export * from './Skills/Skills';
 export * from './Projects/Projects';
 export * from './Roadmap/Roadmap';
 export * from './Education/Education';
-export * from './Contact/Contact'
+export * from './Contact/Contact';

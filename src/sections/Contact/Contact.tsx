@@ -7,7 +7,7 @@ export const Contact = () => {
       id="contact"
       containerClassName="grid grid-cols-1 gap-8 md:grid-cols-2 py-16 md:py-24"
     >
-      <section className='flex flex-col max-w-lg'>
+      <section className="flex flex-col max-w-lg">
         <SectionHeader
           eyebrowNumber="06"
           eyebrowLabel="Contacto"
