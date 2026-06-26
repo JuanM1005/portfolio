@@ -9,8 +9,8 @@ interface HeaderCtaProps {
 export const HeaderCta = ({ className }: HeaderCtaProps) => {
   return (
     <div className={clsx('hidden md:block', className)}>
-      <NavLink href={CV_HREF} download withAnimation={false}>
-        <Button variant="dark">Descargar CV</Button>
+      <NavLink href={CV_HREF} download withAnimation={false} withFocusRing={false}>
+        <Button variant="dark" className="group-focus-visible:outline-none group-focus-visible:ring-2 group-focus-visible:ring-burgundy-600">Descargar CV</Button>
       </NavLink>
     </div>
   );

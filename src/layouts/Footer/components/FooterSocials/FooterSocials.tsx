@@ -11,7 +11,7 @@ export const FooterSocials = () => {
         <a
           key={label}
           href={href}
-          className="inline-flex items-center gap-2 text-sm text-ink-muted transition-colors duration-200 hover:text-ink"
+          className="inline-flex items-center gap-2 rounded-sm text-sm text-ink-muted transition-colors duration-200 hover:text-ink focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-burgundy-600"
           {...(external ? { target: '_blank', rel: 'noreferrer' } : {})}
         >
           <Icon size={14} aria-hidden="true" />

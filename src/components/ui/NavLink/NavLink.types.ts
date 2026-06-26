@@ -7,4 +7,5 @@ export interface NavLinkProps extends AnchorHTMLAttributes<HTMLAnchorElement> {
   children: ReactNode;
   withAnimation?: boolean;
   variant?: NavLinkVariant;
+  withFocusRing?: boolean;
 }

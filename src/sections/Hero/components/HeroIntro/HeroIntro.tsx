@@ -29,8 +29,8 @@ export const HeroIntro = () => {
       </p>
 
       <div className="mt-8 flex flex-wrap gap-3">
-        <a href={HERO_LINKS.projects}>
-          <Button variant="secondary" size="md">
+        <a href={HERO_LINKS.projects} className="group focus-visible:outline-none">
+          <Button variant="secondary" size="md" className="group-focus-visible:outline-none group-focus-visible:ring-2 group-focus-visible:ring-burgundy-600">
             Ver proyectos
           </Button>
         </a>
