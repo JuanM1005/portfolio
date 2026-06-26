@@ -9,5 +9,5 @@ export const navItems: NavItem[] = [
   { label: 'Proyectos', href: '#projects' },
   { label: 'Roadmap', href: '#roadmap' },
   { label: 'Formación', href: '#education' },
-  { label: 'Contacto', href: '#contact', pending: true },
+  { label: 'Contacto', href: '#contact'},
 ] as const;
