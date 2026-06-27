@@ -2,6 +2,7 @@ import clsx from 'clsx';
 import { useFormContext, useWatch } from 'react-hook-form';
 import type { TextareaProps } from './Textarea.types';
 import CharacterCounter from './CharacterCounter';
+import { fieldBase, fieldError } from '../Input/field.styles';
 
 export const Textarea = ({
   label,
@@ -21,10 +22,7 @@ export const Textarea = ({
     formState: { errors }
   } = useFormContext();
 
-  const watchedValue = useWatch({
-    control,
-    name
-  });
+  const watchedValue = useWatch({ control, name });
 
   const currentLength = watchedValue ? String(watchedValue).length : 0;
   const { maxLength } = rest;
@@ -40,10 +38,10 @@ export const Textarea = ({
       <textarea
         id={textareaId}
         className={clsx(
-          'order-2 peer min-h-52 w-full rounded-lg border border-border-soft bg-surface px-3 py-3 text-sm text-ink transition-[border-color,box-shadow] placeholder:text-ink-muted focus-visible:border-burgundy-600 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-burgundy-100 disabled:cursor-not-allowed disabled:resize-none disabled:bg-surface-card-muted disabled:opacity-60',
+          fieldBase,
+          'min-h-52 px-3 py-3',
           resize ? 'resize-y' : 'resize-none',
-          errorMessage &&
-            'border-red-500 focus-visible:border-red-500 focus-visible:ring-red-500/40',
+          errorMessage && fieldError,
           className
         )}
         aria-invalid={errorMessage ? true : undefined}

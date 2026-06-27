@@ -1,6 +1,7 @@
 import clsx from 'clsx';
 import { useFormContext } from 'react-hook-form';
 import type { InputProps } from './Input.types';
+import { fieldBase, fieldError } from './field.styles';
 
 export const Input = ({
   label,
@@ -18,7 +19,7 @@ export const Input = ({
     formState: { errors }
   } = useFormContext();
 
-  const errorMessage = typeof errors[name]?.message === 'string' ? errors[name]?.message : undefined
+  const errorMessage = typeof errors[name]?.message === 'string' ? errors[name]?.message : undefined;
 
   const descriptionId =
     errorMessage || hint ? `${inputId}-description` : undefined;
@@ -28,9 +29,9 @@ export const Input = ({
       <input
         id={inputId}
         className={clsx(
-          'order-2 peer w-full rounded-lg border border-border-soft bg-surface px-3 py-2 text-sm text-ink transition-[border-color,box-shadow] placeholder:text-ink-muted focus-visible:border-burgundy-600 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-burgundy-100 disabled:cursor-not-allowed disabled:bg-surface-card-muted disabled:opacity-60',
-          errorMessage &&
-          'border-red-500 focus-visible:border-red-500 focus-visible:ring-red-500/40',
+          fieldBase,
+          'px-3 py-2',
+          errorMessage && fieldError,
           className
         )}
         aria-invalid={errorMessage ? true : undefined}
