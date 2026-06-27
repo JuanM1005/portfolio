@@ -1,7 +1,10 @@
+import { useTranslation } from 'react-i18next';
 import { SectionLayout, SectionHeader } from '@/components/ui';
 import { EducationList } from './components';
 
 export const Education = () => {
+  const { t } = useTranslation();
+
   return (
     <SectionLayout
       id="education"
@@ -10,9 +13,9 @@ export const Education = () => {
     >
       <SectionHeader
         eyebrowNumber="05"
-        eyebrowLabel="Educación"
-        title="Formación técnica aplicada a proyectos reales."
-        description="Mi aprendizaje combina la base académica de Ingeniería Informática con práctica constante en desarrollo frontend. Busco que cada curso, proyecto y tecnología se traduzca en mejores decisiones de código, estructura e interfaz."
+        eyebrowLabel={t('education.eyebrow')}
+        title={t('education.title')}
+        description={t('education.description')}
       />
 
       <EducationList />

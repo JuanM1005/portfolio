@@ -1,9 +1,8 @@
-import type { EducationProps } from '../../education.types';
-
-type EducationHeaderProps = Pick<
-  EducationProps,
-  'eyebrow' | 'title' | 'subtitle'
->;
+interface EducationHeaderProps {
+  eyebrow: string;
+  title: string;
+  subtitle: string;
+}
 
 export const EducationHeader = ({
   eyebrow,

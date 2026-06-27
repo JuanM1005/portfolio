@@ -1,3 +1,4 @@
+import { useTranslation } from 'react-i18next';
 import { Badge } from '@/components/ui';
 import type { ProjectProps } from '../../projects.types';
 import { STATUS_CONFIG } from '../../constants/projects.constants';
@@ -8,15 +9,16 @@ export const ProjectCardHeader = ({
   status,
   category,
 }: ProjectCardHeaderProps) => {
-  const { label, variant } = STATUS_CONFIG[status];
+  const { t } = useTranslation();
+  const { variant } = STATUS_CONFIG[status];
 
   return (
     <header className="flex items-center justify-between gap-4">
       <Badge variant={variant} withDot className="rounded-md uppercase">
-        {label}
+        {t(`projects.status.${status}`)}
       </Badge>
       <span className="font-mono text-[10px] font-medium uppercase tracking-[0.2em] text-ink-muted">
-        {category}
+        {t(`projects.category.${category}`)}
       </span>
     </header>
   );

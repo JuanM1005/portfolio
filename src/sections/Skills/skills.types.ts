@@ -1,10 +1,11 @@
 export interface SkillItem {
+  id: string;
   name: string;
-  meta?: string;
 }
 
 export interface LearningSkill {
+  id: string;
   name: string;
-  status: 'Aprendiendo' | 'Practicando';
+  statusKey: 'practicing' | 'learning';
   progress: number; // 0-100
 }

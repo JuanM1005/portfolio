@@ -1,10 +1,13 @@
+import { useTranslation } from 'react-i18next';
 import { socialLinks } from '@/constants/social.constants';
 
 export const FooterSocials = () => {
+  const { t } = useTranslation();
+
   return (
     <div className="flex flex-col gap-1">
       <p className="mb-3 font-mono text-xs font-semibold uppercase tracking-[0.2em] text-ink-soft">
-        Contacto
+        {t('footer.contact')}
       </p>
 
       {socialLinks.map(({ label, href, icon: Icon, external }) => (

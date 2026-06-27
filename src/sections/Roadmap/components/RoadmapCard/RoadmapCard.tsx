@@ -1,4 +1,5 @@
 import clsx from 'clsx';
+import { useTranslation } from 'react-i18next';
 import { Card } from '@/components/ui';
 import type { RoadmapProps } from '../../roadmap.types';
 import { RoadmapHeader } from '../RoadmapHeader/RoadmapHeader';
@@ -11,13 +12,14 @@ interface RoadmapCardProps extends RoadmapProps {
 
 export const RoadmapCard = ({
   eyebrowNumber,
-  title,
-  description,
   status,
   isFirst = false,
   isLast = false,
 }: RoadmapCardProps) => {
+  const { t } = useTranslation();
   const isCurrent = status === 'inProgress';
+  const title = t(`roadmap.items.${eyebrowNumber}.title`);
+  const description = t(`roadmap.items.${eyebrowNumber}.description`);
 
   return (
     <li className="relative flex gap-6">
@@ -44,7 +46,7 @@ export const RoadmapCard = ({
           {isCurrent && (
             <p className="flex items-center gap-2 text-xs font-medium text-burgundy-600">
               <span className="size-1.5 rounded-full bg-burgundy-600" />
-              En enfoque actual
+              {t('roadmap.currentFocus')}
             </p>
           )}
         </Card>

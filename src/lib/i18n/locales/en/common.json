@@ -1,0 +1,244 @@
+{
+  "language": {
+    "switch": "Switch language",
+    "current": "Current language: {{lang}}",
+    "spanish": "Spanish",
+    "english": "English"
+  },
+  "actions": {
+    "viewProjects": "View projects",
+    "downloadCv": "Download CV",
+    "viewMore": "View more",
+    "send": "Send message"
+  },
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "skills": "Skills",
+    "projects": "Projects",
+    "roadmap": "Roadmap",
+    "education": "Education",
+    "contact": "Contact"
+  },
+  "hero": {
+    "badge": "Open to collaboration",
+    "title": "<1>Frontend</1> developer in training, building clear and well-structured interfaces.",
+    "subtitle": "I work with React, TypeScript, and Tailwind CSS while building my path toward full stack. I focus on creating clean, responsive, and accessible experiences, with attention to detail and a desire to contribute to real projects.",
+    "ctaContact": "Contact",
+    "stack": {
+      "current": "Current stack"
+    },
+    "terminal": {
+      "subtitle": "CS Engineering · CUCEI · Guadalajara",
+      "focus": "Frontend in training",
+      "focusSuffix": "full stack path",
+      "baseLabel": "base:",
+      "practiceLabel": "in practice:"
+    }
+  },
+  "about": {
+    "eyebrow": "About me",
+    "title": "Technical foundation, visual judgment, and a drive to build better.",
+    "description": "I'm a Computer Engineering student at CUCEI and a frontend developer in training. My background comes from complete academic projects — management systems, databases, and data structures built from scratch. Today I'm focused on React, TypeScript, and Tailwind CSS, with a goal of moving toward full stack. I care about writing clean, responsive, and maintainable interfaces, understanding both the user experience and code structure. I'm in an active growth phase: I don't overstate my experience, but I approach every project as an opportunity to practice, document decisions, and contribute responsibly.",
+    "photo": {
+      "badge": "Portrait",
+      "ariaLabel": "Portrait of Juan Antonio Aguirre Mares",
+      "alt": "Profile photo of Juan Antonio Aguirre Mares"
+    },
+    "facts": {
+      "location": "Location",
+      "studies": "Studies",
+      "studiesValue": "CS Engineering",
+      "focus": "Focus",
+      "base": "Base",
+      "learning": "Learning",
+      "status": "Status",
+      "statusValue": "Available"
+    }
+  },
+  "skills": {
+    "eyebrow": "Skills",
+    "title": "Tools I use, foundations that support my learning.",
+    "description": "My profile combines programming fundamentals with modern frontend practice. I distinguish what I've already applied in projects from what I'm still reinforcing, to show clear and honest progress.",
+    "groups": {
+      "technical": "Technical skills",
+      "workStyle": "Work style"
+    },
+    "base": {
+      "title": "Applied foundation",
+      "eyebrow": "Fundamentals"
+    },
+    "learning": {
+      "title": "Current frontend",
+      "eyebrow": "In practice",
+      "nextSteps": "Next steps",
+      "progressAria": "Progress for {{name}}: {{progress}}%"
+    },
+    "status": {
+      "practicing": "Practicing",
+      "learning": "Learning"
+    },
+    "meta": {
+      "cpp": "OOP · logic · data structures",
+      "python": "analysis · scripts · data",
+      "sql": "modeling · queries",
+      "htmlCss": "semantics · responsive",
+      "git": "versioning · collaboration"
+    },
+    "soft": {
+      "discipline": "Discipline to learn consistently",
+      "detail": "Attention to detail",
+      "communication": "Clear communication in a team",
+      "adaptability": "Adaptability to new challenges",
+      "feedback": "Openness to feedback and improvement"
+    }
+  },
+  "projects": {
+    "eyebrow": "Projects",
+    "title": "Projects where I turn learning into functional interfaces.",
+    "description": "A selection of personal and academic work showing how I solve concrete needs, organize components, consume data, and document what I've learned in each process.",
+    "learnedLabel": "What I learned",
+    "collaboratorsLabel": "In collaboration",
+    "status": {
+      "completed": "Completed",
+      "inProgress": "In progress",
+      "upcoming": "Upcoming"
+    },
+    "category": {
+      "academic": "Academic",
+      "personal": "Personal"
+    },
+    "items": {
+      "petcare": {
+        "description": "Web app for small and medium veterinary clinics, designed to organize patients, appointments, and clinical history with a scalable frontend foundation.",
+        "learned": "Feature-based organization, reusable components with Tailwind CSS v4, and planning an offline-first PWA experience."
+      },
+      "quicknotes": {
+        "description": "Notes app with search, filters, sidebar, and local persistence, focused on a simple experience for capturing and finding information quickly.",
+        "learned": "State management in React, UI interaction modeling, and data persistence with localStorage."
+      },
+      "framelix": {
+        "description": "Movie catalog SPA that consumes the TMDB API, allows browsing film details, and organizes navigation with React Router.",
+        "learned": "REST API consumption, route handling, Git collaboration, and deploying a frontend app on Netlify."
+      },
+      "vetcare": {
+        "description": "Desktop system for veterinary management: appointments, clients, patients, medical history, vaccination, and inventory in a centralized workflow.",
+        "learned": "Relational data modeling, desktop interface design, and coordinating teamwork with Git."
+      },
+      "technest": {
+        "description": "Management system for a tech store, built in C++ with OOP to handle inventory, suppliers, and orders.",
+        "learned": "OOP application, separation of concerns, and basic management system design."
+      },
+      "dataStructures": {
+        "description": "Collection of data structures and algorithms implemented from scratch to reinforce logic, data traversal, and algorithmic reasoning.",
+        "learned": "Practical understanding of efficiency, data organization, and problem-solving from first principles."
+      }
+    }
+  },
+  "roadmap": {
+    "eyebrow": "Full stack roadmap",
+    "title": "A growth path with concrete steps.",
+    "description": "My current route prioritizes strengthening frontend, adding backend with intention, and building complete projects where each new technology has a practical and measurable application.",
+    "currentFocus": "Current focus",
+    "status": {
+      "completed": "Completed",
+      "inProgress": "In progress",
+      "next": "Next",
+      "upcoming": "Upcoming",
+      "goal": "Goal"
+    },
+    "items": {
+      "01": {
+        "title": "Frontend Fundamentals",
+        "description": "HTML, CSS, and JavaScript applied to responsive layout, semantics, and language basics."
+      },
+      "02": {
+        "title": "React + TypeScript + Tailwind",
+        "description": "Components, state, static typing, and building consistent interfaces."
+      },
+      "03": {
+        "title": "REST API Consumption",
+        "description": "Fetch, async data, handling loading and error states."
+      },
+      "04": {
+        "title": "Node.js",
+        "description": "First steps with server-side JavaScript and backend structure."
+      },
+      "05": {
+        "title": "Express & custom APIs",
+        "description": "Building endpoints, routes, validations, and server logic."
+      },
+      "06": {
+        "title": "Databases",
+        "description": "Reinforcing SQL, relational modeling, and persistence with PostgreSQL."
+      },
+      "07": {
+        "title": "Full Stack Project",
+        "description": "An end-to-end application integrating frontend, backend, data, and deployment."
+      }
+    }
+  },
+  "education": {
+    "eyebrow": "Education",
+    "title": "Technical training applied to real projects.",
+    "description": "My learning combines the academic foundation of Computer Engineering with consistent practice in frontend development. I aim for every course, project, and technology to translate into better decisions around code, structure, and interface.",
+    "items": {
+      "university": {
+        "eyebrow": "2023 – Present",
+        "title": "Computer Engineering",
+        "description": "University degree focused on programming, data structures, databases, OOP, and foundations for building software with logic and organization."
+      },
+      "frontend": {
+        "eyebrow": "Ongoing",
+        "title": "Modern frontend in practice",
+        "description": "Project-driven learning guided by official documentation and iterative improvement of clean, responsive, and maintainable interfaces."
+      }
+    }
+  },
+  "contact": {
+    "eyebrow": "Contact",
+    "title": "Have an idea in mind?",
+    "description": "I'm open to internships, frontend projects, and new opportunities where I can contribute, learn, and keep growing. Whether you have a proposal, an idea, or just want to say hello — I'd love to hear from you.",
+    "form": {
+      "name": "Name",
+      "namePlaceholder": "Your name",
+      "email": "Email",
+      "emailPlaceholder": "Your email",
+      "message": "Message",
+      "messagePlaceholder": "How can I help you?",
+      "submit": "Send message",
+      "submitting": "Sending..."
+    },
+    "toast": {
+      "noEndpoint": "Form endpoint is not configured.",
+      "success": "Message sent successfully",
+      "error": "Could not send the message. Please try again."
+    },
+    "validation": {
+      "nameRequired": "Name is required",
+      "emailInvalid": "Enter a valid email address",
+      "emailRequired": "Email is required",
+      "messageRequired": "Message is required",
+      "messageMax": "Message cannot exceed {{max}} characters"
+    },
+    "links": {
+      "email": "Email",
+      "github": "Github"
+    }
+  },
+  "footer": {
+    "contact": "Contact",
+    "explore": "Explore",
+    "scrollTop": "Back to top",
+    "tagline": "Frontend in training",
+    "navAria": "Footer navigation",
+    "homeAria": "Go to top"
+  },
+  "header": {
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu",
+    "mobileNavAria": "Mobile navigation",
+    "mainNavAria": "Main navigation",
+    "homeAria": "Go to top"
+  }
+}

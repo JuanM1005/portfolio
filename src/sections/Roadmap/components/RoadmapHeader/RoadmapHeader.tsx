@@ -1,19 +1,20 @@
 import clsx from 'clsx';
+import { useTranslation } from 'react-i18next';
 import type { RoadmapProps } from '../../roadmap.types';
-import { STATUS_CONFIG } from '../../constants/roadmap.constants';
 import { statusStyles } from '../../constants/roadmap.styles';
 
-type RoadmapHeaderProps = Pick<
-  RoadmapProps,
-  'eyebrowNumber' | 'title' | 'status'
->;
+interface RoadmapHeaderProps {
+  eyebrowNumber: string;
+  title: string;
+  status: RoadmapProps['status'];
+}
 
 export const RoadmapHeader = ({
   eyebrowNumber,
   title,
   status,
 }: RoadmapHeaderProps) => {
-  const { label } = STATUS_CONFIG[status];
+  const { t } = useTranslation();
   const { badge } = statusStyles[status];
 
   return (
@@ -33,7 +34,7 @@ export const RoadmapHeader = ({
           badge,
         )}
       >
-        {label}
+        {String(t(`roadmap.status.${status}`))}
       </span>
     </header>
   );

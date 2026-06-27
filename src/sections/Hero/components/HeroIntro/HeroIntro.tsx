@@ -1,4 +1,5 @@
 import clsx from 'clsx';
+import { Trans, useTranslation } from 'react-i18next';
 import { FiMail } from 'react-icons/fi';
 import { Badge, NavLink } from '@/components/ui';
 import { variantStyles as buttonVariantStyles } from '@/components/ui/Button/Button.styles';
@@ -9,10 +10,12 @@ const buttonShell =
   'h-auto! rounded-md! px-4! py-2! transition-all! duration-300!';
 
 export const HeroIntro = () => {
+  const { t } = useTranslation();
+
   return (
     <div className="flex flex-col items-start">
       <Badge variant="available" withDot>
-        Disponible para colaborar
+        {t('hero.badge')}
       </Badge>
 
       <div className="font-mono">
@@ -21,16 +24,15 @@ export const HeroIntro = () => {
         </p>
 
         <h1 className="mt-4 text-3xl font-semibold tracking-tight text-ink md:text-4xl lg:text-5xl">
-          Desarrollador <span className="text-burgundy-600">frontend</span> en
-          formación, construyendo interfaces claras y bien estructuradas.
+          <Trans
+            i18nKey="hero.title"
+            components={[<span className="text-burgundy-600" />]}
+          />
         </h1>
       </div>
 
       <p className="mt-6 max-w-xl text-base text-justify leading-relaxed text-ink-muted md:text-lg">
-        Trabajo con React, TypeScript y Tailwind CSS mientras fortalezco mi
-        camino hacia full stack. Me enfoco en crear experiencias limpias,
-        responsivas y accesibles, con atención al detalle y disposición para
-        aportar en proyectos reales.
+        {t('hero.subtitle')}
       </p>
 
       <div className="mt-8 flex flex-wrap gap-3">
@@ -44,7 +46,7 @@ export const HeroIntro = () => {
             'focus-visible:ring-ink-soft!',
           )}
         >
-          Ver proyectos
+          {t('actions.viewProjects')}
         </NavLink>
 
         <NavLink
@@ -53,7 +55,7 @@ export const HeroIntro = () => {
           className={clsx(buttonShell, buttonVariantStyles.ghost)}
         >
           <FiMail size={16} aria-hidden="true" />
-          Contactar
+          {t('hero.ctaContact')}
         </NavLink>
       </div>
     </div>

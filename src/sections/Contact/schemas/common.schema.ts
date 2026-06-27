@@ -1,18 +1,19 @@
 import z from 'zod';
+import type { TFunction } from 'i18next';
 import { MESSAGE_MAX_LENGTH } from '../constants/contact.constants';
 
-export const nameSchema = z.string().trim().min(1, 'El nombre es obligatorio');
+export const createNameSchema = (t: TFunction) =>
+  z.string().trim().min(1, t('contact.validation.nameRequired'));
 
-export const emailSchema = z
-  .email('Ingresa un correo válido')
-  .trim()
-  .min(1, 'El correo es obligatorio');
+export const createEmailSchema = (t: TFunction) =>
+  z
+    .email(t('contact.validation.emailInvalid'))
+    .trim()
+    .min(1, t('contact.validation.emailRequired'));
 
-export const messageSchema = z
-  .string()
-  .trim()
-  .min(1, 'El mensaje es obligatorio')
-  .max(
-    MESSAGE_MAX_LENGTH,
-    `El mensaje no puede superar los ${MESSAGE_MAX_LENGTH} caracteres`,
-  );
+export const createMessageSchema = (t: TFunction) =>
+  z
+    .string()
+    .trim()
+    .min(1, t('contact.validation.messageRequired'))
+    .max(MESSAGE_MAX_LENGTH, t('contact.validation.messageMax', { max: MESSAGE_MAX_LENGTH }));

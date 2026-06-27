@@ -1,3 +1,4 @@
+import { useTranslation } from 'react-i18next';
 import { Button, NavLink } from '@/components/ui';
 import { FiMenu, FiX } from 'react-icons/fi';
 import useMobileMenu from '../../context/useMobileMenu';
@@ -6,6 +7,7 @@ import { useLockScroll } from '../../hooks/useLockScroll';
 import { HeaderNav } from '../HeaderNav/HeaderNav';
 
 export const MobileMenu = () => {
+  const { t } = useTranslation();
   const { isOpen, toggleMenu, closeMenu } = useMobileMenu();
   useLockScroll();
 
@@ -15,7 +17,7 @@ export const MobileMenu = () => {
         variant="ghost"
         size="sm"
         onClick={toggleMenu}
-        aria-label={isOpen ? 'Cerrar menú' : 'Abrir menú'}
+        aria-label={isOpen ? t('header.closeMenu') : t('header.openMenu')}
         aria-expanded={isOpen}
         aria-controls="mobile-menu"
       >
@@ -41,7 +43,7 @@ export const MobileMenu = () => {
         >
           <div className="mx-auto flex w-full max-w-6xl flex-col px-6 py-4">
             <HeaderNav
-              ariaLabel="Navegación móvil"
+              ariaLabel={t('header.mobileNavAria')}
               className="flex flex-col gap-1"
               itemClassName="py-2 text-base"
               onItemClick={closeMenu}
@@ -61,7 +63,7 @@ export const MobileMenu = () => {
                   fullWidth
                   className="group-focus-visible:outline-none group-focus-visible:ring-2 group-focus-visible:ring-burgundy-600"
                 >
-                  Descargar CV
+                  {t('actions.downloadCv')}
                 </Button>
               </NavLink>
             </div>

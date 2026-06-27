@@ -1,26 +1,26 @@
 import type { SkillItem, LearningSkill } from '../skills.types';
 
 export const HARD_SKILLS: SkillItem[] = [
-  { name: 'C / C++', meta: 'POO · lógica · estructuras' },
-  { name: 'Python', meta: 'análisis · scripts · datos' },
-  { name: 'MySQL / SQLite', meta: 'modelado · consultas' },
-  { name: 'HTML & CSS', meta: 'semántica · responsive' },
-  { name: 'Git & GitHub', meta: 'versionado · colaboración' },
+  { id: 'cpp', name: 'C / C++' },
+  { id: 'python', name: 'Python' },
+  { id: 'sql', name: 'MySQL / SQLite' },
+  { id: 'htmlCss', name: 'HTML & CSS' },
+  { id: 'git', name: 'Git & GitHub' },
 ];
 
 export const SOFT_SKILLS: SkillItem[] = [
-  { name: 'Disciplina para aprender con constancia' },
-  { name: 'Cuidado por el detalle' },
-  { name: 'Comunicación clara en equipo' },
-  { name: 'Adaptabilidad ante nuevos retos' },
-  { name: 'Apertura a feedback y mejora' },
+  { id: 'discipline', name: 'discipline' },
+  { id: 'detail', name: 'detail' },
+  { id: 'communication', name: 'communication' },
+  { id: 'adaptability', name: 'adaptability' },
+  { id: 'feedback', name: 'feedback' },
 ];
 
 export const LEARNING_SKILLS: LearningSkill[] = [
-  { name: 'React', status: 'Practicando', progress: 60 },
-  { name: 'TypeScript', status: 'Aprendiendo', progress: 40 },
-  { name: 'Tailwind CSS', status: 'Practicando', progress: 75 },
-  { name: 'JavaScript moderno', status: 'Aprendiendo', progress: 55 },
+  { id: 'react', name: 'React', statusKey: 'practicing', progress: 60 },
+  { id: 'typescript', name: 'TypeScript', statusKey: 'learning', progress: 40 },
+  { id: 'tailwind', name: 'Tailwind CSS', statusKey: 'practicing', progress: 75 },
+  { id: 'jsModerno', name: 'JavaScript moderno', statusKey: 'learning', progress: 55 },
 ];
 
 export const ROADMAP_NEXT: string[] = [

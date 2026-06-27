@@ -1,7 +1,10 @@
+import { useTranslation } from 'react-i18next';
 import { SectionLayout, SectionHeader } from '@/components/ui';
 import { ContactList, ContactForm } from './components';
 
 export const Contact = () => {
+  const { t } = useTranslation();
+
   return (
     <SectionLayout
       id="contact"
@@ -10,9 +13,9 @@ export const Contact = () => {
       <section className="flex flex-col max-w-lg">
         <SectionHeader
           eyebrowNumber="06"
-          eyebrowLabel="Contacto"
-          title="¿Tienes una idea en mente?"
-          description="Estoy abierto a prácticas profesionales, proyectos frontend y nuevas oportunidades donde pueda aportar, aprender y seguir creciendo. Si tienes una propuesta, una idea o simplemente quieres saludar, estaré encantado de leerte."
+          eyebrowLabel={t('contact.eyebrow')}
+          title={t('contact.title')}
+          description={t('contact.description')}
         />
 
         <ContactList />
