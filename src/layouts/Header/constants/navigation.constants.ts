@@ -1,8 +1,8 @@
-import type { NavItem } from '../types/navigation.types';
+import type { HeaderNavItem } from '../headerNav.types';
 
 export const CV_HREF = '/docs/CV_JuanAntonio_AguirreMares.pdf';
 
-export const navItems: NavItem[] = [
+export const headerNavItems: HeaderNavItem[] = [
   { label: 'Inicio', href: '#home' },
   { label: 'Sobre mí', href: '#about' },
   { label: 'Habilidades', href: '#skills' },
