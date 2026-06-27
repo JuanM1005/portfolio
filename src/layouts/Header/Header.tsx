@@ -3,9 +3,12 @@ import { HeaderLogo, HeaderNav, HeaderCta, MobileMenu } from './components';
 import clsx from 'clsx';
 import { MobileMenuProvider } from './context/MobileMenuProvider';
 import { useHandleScroll } from './hooks/useHandleScroll';
+import { useState } from 'react';
+import type { HeaderNavType } from './headerNav.types';
 
 export const Header = () => {
   const { isScrolled } = useHandleScroll(50);
+  const [activeHref, setActiveHref] = useState<HeaderNavType>('#home');
 
   return (
     <MobileMenuProvider>
@@ -23,7 +26,7 @@ export const Header = () => {
         />
         <Container className="flex min-h-16 items-center justify-between py-6">
           <HeaderLogo />
-          <HeaderNav />
+          <HeaderNav activeHref={activeHref} onItemClick={setActiveHref} />
           <div className='flex items-center justify-between gap-2'>
             <LanguageToggle />
             <HeaderCta />

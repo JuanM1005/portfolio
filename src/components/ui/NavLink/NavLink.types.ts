@@ -1,6 +1,6 @@
 import type { AnchorHTMLAttributes, ReactNode } from 'react';
 
-export type NavLinkVariant = 'ink' | 'burgundy' | 'muted' | 'soft';
+export type NavLinkVariant = 'ink' | 'burgundy' | 'muted' | 'soft' | 'inverted';
 
 export interface NavLinkProps extends AnchorHTMLAttributes<HTMLAnchorElement> {
   href: string;
