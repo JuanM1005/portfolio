@@ -1,4 +1,4 @@
-import { headerNavItems } from '../../../Header/constants/navigation.constants';
+import { navItems } from '@/constants/navigation.constants';
 import { NavLink } from '@/components/ui';
 
 export const FooterNav = () => {
@@ -8,7 +8,7 @@ export const FooterNav = () => {
         Explorar
       </p>
 
-      {headerNavItems.map((item) => (
+      {navItems.map((item) => (
         <NavLink
           href={item.href}
           key={item.href}

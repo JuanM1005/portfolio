@@ -1,6 +1,6 @@
 import clsx from 'clsx';
 import { Button, NavLink } from '@/components/ui';
-import { CV_HREF } from '../../constants/navigation.constants';
+import { CV_HREF } from '../../constants/header.constants';
 
 interface HeaderCtaProps {
   className?: string;

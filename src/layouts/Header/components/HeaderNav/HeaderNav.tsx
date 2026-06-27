@@ -1,14 +1,14 @@
-import { headerNavItems } from '../../constants/navigation.constants';
+import { navItems } from '@/constants/navigation.constants';
 import { NavLink } from '@/components/ui';
-import type { HeaderNavType } from '../../headerNav.types';
+import type { NavHref } from '@/types/navigation.types';
 import clsx from 'clsx';
 
 interface HeaderNavProps {
   className?: string;
   itemClassName?: string;
   ariaLabel?: string;
-  activeHref?: HeaderNavType;
-  onItemClick?: (href: HeaderNavType) => void;
+  activeHref?: NavHref;
+  onItemClick?: (href: NavHref) => void;
 }
 
 export const HeaderNav = ({
@@ -19,7 +19,7 @@ export const HeaderNav = ({
   onItemClick,
 }: HeaderNavProps) => (
   <nav className={className} aria-label={ariaLabel}>
-    {headerNavItems.map((item) => {
+    {navItems.map((item) => {
       const isActive = activeHref === item.href;
 
       return (

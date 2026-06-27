@@ -1,7 +1,7 @@
 import { Button, NavLink } from '@/components/ui';
 import { FiMenu, FiX } from 'react-icons/fi';
 import useMobileMenu from '../../context/useMobileMenu';
-import { CV_HREF } from '../../constants/navigation.constants';
+import { CV_HREF } from '../../constants/header.constants';
 import { useLockScroll } from '../../hooks/useLockScroll';
 import { HeaderNav } from '../HeaderNav/HeaderNav';
 

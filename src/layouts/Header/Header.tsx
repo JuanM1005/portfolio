@@ -4,11 +4,11 @@ import clsx from 'clsx';
 import { MobileMenuProvider } from './context/MobileMenuProvider';
 import { useHandleScroll } from './hooks/useHandleScroll';
 import { useState } from 'react';
-import type { HeaderNavType } from './headerNav.types';
+import type { NavHref } from '@/types/navigation.types';
 
 export const Header = () => {
   const { isScrolled } = useHandleScroll(50);
-  const [activeHref, setActiveHref] = useState<HeaderNavType>('#home');
+  const [activeHref, setActiveHref] = useState<NavHref>('#home');
 
   return (
     <MobileMenuProvider>
