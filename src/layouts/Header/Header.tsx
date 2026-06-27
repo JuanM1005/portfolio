@@ -27,7 +27,7 @@ export const Header = () => {
         <Container className="flex min-h-16 items-center justify-between py-6">
           <HeaderLogo />
           <HeaderNav activeHref={activeHref} onItemClick={setActiveHref} />
-          <div className='flex items-center justify-between gap-2'>
+          <div className="flex items-center justify-between gap-2">
             <LanguageToggle />
             <HeaderCta />
             <MobileMenu />

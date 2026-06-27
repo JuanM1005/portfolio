@@ -8,7 +8,7 @@ import { zodResolver } from '@hookform/resolvers/zod';
 import {
   contactFormSchema,
   contactFormDefaultValues,
-  type ContactFormValues
+  type ContactFormValues,
 } from '../../schemas/contact.schema';
 
 const FORMSPREE_ENDPOINT = import.meta.env.VITE_FORMSPREE_ENDPOINT;
@@ -16,13 +16,13 @@ const FORMSPREE_ENDPOINT = import.meta.env.VITE_FORMSPREE_ENDPOINT;
 export const ContactForm = () => {
   const methods = useForm<ContactFormValues>({
     resolver: zodResolver(contactFormSchema),
-    defaultValues: contactFormDefaultValues
+    defaultValues: contactFormDefaultValues,
   });
 
   const {
     handleSubmit,
     reset,
-    formState: { isSubmitting }
+    formState: { isSubmitting },
   } = methods;
 
   const onSubmit = async (data: ContactFormValues): Promise<void> => {

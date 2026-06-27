@@ -5,8 +5,10 @@ export interface CharacterCounterProps {
   max: number;
 }
 
-export interface TextareaProps
-  extends Omit<TextareaHTMLAttributes<HTMLTextAreaElement>, 'name'> {
+export interface TextareaProps extends Omit<
+  TextareaHTMLAttributes<HTMLTextAreaElement>,
+  'name'
+> {
   label: string;
   name: string;
   error?: string;

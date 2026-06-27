@@ -12,7 +12,7 @@ const CharacterCounter = ({ current, max }: CharacterCounterProps) => {
           ? 'text-red-500'
           : percentage >= 0.8
             ? 'text-amber-500'
-            : 'text-ink-muted'
+            : 'text-ink-muted',
       )}
     >
       {current} / {max}

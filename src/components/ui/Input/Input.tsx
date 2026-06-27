@@ -16,10 +16,13 @@ export const Input = ({
 
   const {
     register,
-    formState: { errors }
+    formState: { errors },
   } = useFormContext();
 
-  const errorMessage = typeof errors[name]?.message === 'string' ? errors[name]?.message : undefined;
+  const errorMessage =
+    typeof errors[name]?.message === 'string'
+      ? errors[name]?.message
+      : undefined;
 
   const descriptionId =
     errorMessage || hint ? `${inputId}-description` : undefined;
@@ -32,7 +35,7 @@ export const Input = ({
           fieldBase,
           'px-3 py-2',
           errorMessage && fieldError,
-          className
+          className,
         )}
         aria-invalid={errorMessage ? true : undefined}
         aria-describedby={descriptionId}
@@ -52,7 +55,10 @@ export const Input = ({
           {errorMessage}
         </span>
       ) : hint ? (
-        <span id={descriptionId} className="order-3 mt-2 text-xs text-ink-muted">
+        <span
+          id={descriptionId}
+          className="order-3 mt-2 text-xs text-ink-muted"
+        >
           {hint}
         </span>
       ) : null}

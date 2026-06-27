@@ -19,7 +19,7 @@ export const Textarea = ({
   const {
     register,
     control,
-    formState: { errors }
+    formState: { errors },
   } = useFormContext();
 
   const watchedValue = useWatch({ control, name });
@@ -28,7 +28,9 @@ export const Textarea = ({
   const { maxLength } = rest;
 
   const errorMessage =
-    typeof errors[name]?.message === 'string' ? errors[name]?.message : undefined;
+    typeof errors[name]?.message === 'string'
+      ? errors[name]?.message
+      : undefined;
 
   const descriptionId =
     errorMessage || hint ? `${textareaId}-description` : undefined;
@@ -42,7 +44,7 @@ export const Textarea = ({
           'min-h-52 px-3 py-3',
           resize ? 'resize-y' : 'resize-none',
           errorMessage && fieldError,
-          className
+          className,
         )}
         aria-invalid={errorMessage ? true : undefined}
         aria-describedby={descriptionId}

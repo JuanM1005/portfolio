@@ -27,7 +27,10 @@ export const HeaderNav = ({
           key={item.href}
           href={item.href}
           variant={isActive ? 'inverted' : 'ink'}
-          className={clsx(itemClassName, isActive && 'rounded bg-burgundy-600 px-2 py-1')}
+          className={clsx(
+            itemClassName,
+            isActive && 'rounded bg-burgundy-600 px-2 py-1',
+          )}
           onClick={() => onItemClick?.(item.href)}
           withAnimation={!isActive}
         >
