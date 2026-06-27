@@ -1,4 +1,4 @@
-import type { SkillItem, LearningSkill } from '../types/skills.types';
+import type { SkillItem, LearningSkill } from '../skills.types';
 
 export const HARD_SKILLS: SkillItem[] = [
   { name: 'C / C++', meta: 'POO · lógica · estructuras' },

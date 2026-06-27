@@ -1,5 +1,5 @@
 import { SectionLayout, SectionHeader } from '@/components/ui';
-import { EducationList } from './components/EducationList/EducationList';
+import { EducationList } from './components';
 
 export const Education = () => {
   return (

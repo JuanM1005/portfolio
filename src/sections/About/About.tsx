@@ -1,6 +1,6 @@
 import { SectionHeader, SectionLayout, Card } from '@/components/ui';
 import { ABOUT_FACTS } from './constants/about.constants';
-import { AboutPhoto } from './components/AboutPhoto/AboutPhoto';
+import { AboutPhoto } from './components';
 
 export const About = () => {
   return (

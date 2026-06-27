@@ -1,5 +1,5 @@
 import type { TechStack } from '@/types/tech.types';
-import type { AboutFact } from '../types/about.types';
+import type { AboutFact } from '../about.types';
 
 const BASE_STACK: TechStack[] = ['C++', 'Python', 'SQL'];
 
