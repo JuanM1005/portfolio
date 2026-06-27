@@ -11,8 +11,8 @@ export const Contact = () => {
         <SectionHeader
           eyebrowNumber="06"
           eyebrowLabel="Contacto"
-          title="¿Construimos algo juntos?"
-          description="Estoy disponible para prácticas, proyectos y oportunidades. Si quieres saludar o tienes una propuesta, escríbeme."
+          title="¿Tienes una idea en mente?"
+          description="Estoy abierto a prácticas profesionales, proyectos frontend y nuevas oportunidades donde pueda aportar, aprender y seguir creciendo. Si tienes una propuesta, una idea o simplemente quieres saludar, estaré encantado de leerte."
         />
 
         <ContactList />
