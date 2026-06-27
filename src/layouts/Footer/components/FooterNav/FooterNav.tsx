@@ -1,5 +1,4 @@
-import toast from 'react-hot-toast';
-import { navItems } from '../../../Header/constants/navigation.constants';
+import { headerNavItems } from '../../../Header/constants/navigation.constants';
 import { NavLink } from '@/components/ui';
 
 export const FooterNav = () => {
@@ -9,23 +8,12 @@ export const FooterNav = () => {
         Explorar
       </p>
 
-      {navItems.map((item) => (
+      {headerNavItems.map((item) => (
         <NavLink
           href={item.href}
           key={item.href}
-          className="inline-flex items-center gap-2 text-sm text-ink-muted transition-colors duration-200 hover:text-ink"
-          onClick={(e) => {
-            if (item.pending) {
-              e.preventDefault();
-              toast('Próximamente', {
-                icon: '🚧',
-                style: {
-                  fontFamily: 'var(--font-mono)',
-                  fontSize: '0.875rem',
-                },
-              });
-            }
-          }}
+          variant="muted"
+          className="inline-flex items-center gap-2 text-sm transition-colors duration-200"
         >
           {item.label}
         </NavLink>
