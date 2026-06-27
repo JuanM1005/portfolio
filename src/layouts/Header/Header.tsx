@@ -1,4 +1,4 @@
-import { Container } from '@/components/ui';
+import { Container, LanguageToggle } from '@/components/ui';
 import { HeaderLogo, HeaderNav, HeaderCta, MobileMenu } from './components';
 import clsx from 'clsx';
 import { MobileMenuProvider } from './context/MobileMenuProvider';
@@ -24,8 +24,11 @@ export const Header = () => {
         <Container className="flex min-h-16 items-center justify-between py-6">
           <HeaderLogo />
           <HeaderNav />
-          <HeaderCta />
-          <MobileMenu />
+          <div className='flex items-center justify-between gap-2'>
+            <LanguageToggle />
+            <HeaderCta />
+            <MobileMenu />
+          </div>
         </Container>
       </header>
     </MobileMenuProvider>
