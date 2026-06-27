@@ -31,7 +31,7 @@ export const AppLayout = () => {
         toastOptions={{
           duration: 3000,
           className:
-            'md:max-w-2xl! border border-burgundy-600 bg-burgundy-100! p-2! text-xs font-medium text-burgundy-700!',
+            'md:max-w-2xl! border border-surface-card-muted bg-surface! p-2! text-xs font-medium',
 
           success: {
             iconTheme: {
