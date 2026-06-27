@@ -1,4 +1,4 @@
-import type { CursorBlinkVariant, CursorBlickProps } from './CursorBlink.types';
+import type { CursorBlinkVariant, CursorBlinkProps } from './CursorBlink.types';
 import clsx from 'clsx';
 
 const variantStyles: Record<CursorBlinkVariant, string> = {
@@ -11,7 +11,7 @@ export const CursorBlink = ({
   variant = 'burgundy',
   className,
   ...rest
-}: CursorBlickProps) => {
+}: CursorBlinkProps) => {
   const styles = variantStyles[variant];
 
   return (
