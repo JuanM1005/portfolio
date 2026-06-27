@@ -9,3 +9,4 @@ export * from './Card/Card';
 export * from './CursorBlink/CursorBlink';
 export * from './Input/Input';
 export * from './Textarea/Textarea';
+export * from './LanguageToggle/LanguageToggle'
