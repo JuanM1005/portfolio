@@ -1,4 +1,9 @@
-const styles = {
+import type { BadgeVariant } from './Badge.types';
+
+const styles: {
+  badgeVariants: Record<BadgeVariant, string>;
+  badgePingVariants: Record<BadgeVariant, { ping: string; dot: string }>;
+} = {
   badgeVariants: {
     available:
       'border-status-available/20 bg-status-available/5 text-status-available',

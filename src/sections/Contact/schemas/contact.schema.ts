@@ -9,11 +9,7 @@ export const createContactSchema = (t: TFunction) =>
     message: createMessageSchema(t),
   });
 
-export type ContactFormValues = {
-  name: string;
-  email: string;
-  message: string;
-};
+export type ContactFormValues = z.infer<ReturnType<typeof createContactSchema>>;
 
 export const contactFormDefaultValues: ContactFormValues = {
   name: '',

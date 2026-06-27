@@ -1,9 +1,7 @@
 import type { ProjectProps, ProjectStatus } from '../projects.types';
+import type { BadgeVariant } from '@/components/ui/Badge/Badge.types';
 
-export const STATUS_CONFIG: Record<
-  ProjectStatus,
-  { variant: 'available' | 'progress' | 'upcoming' }
-> = {
+export const STATUS_CONFIG: Record<ProjectStatus, { variant: BadgeVariant }> = {
   completed: { variant: 'available' },
   inProgress: { variant: 'progress' },
   upcoming: { variant: 'upcoming' },

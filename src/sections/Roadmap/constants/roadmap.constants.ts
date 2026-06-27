@@ -1,13 +1,4 @@
-import type { RoadmapProps, RoadmapStatus } from '../roadmap.types';
-
-export const STATUS_CONFIG: Record<RoadmapStatus, { variant: RoadmapStatus }> =
-  {
-    completed: { variant: 'completed' },
-    inProgress: { variant: 'inProgress' },
-    next: { variant: 'next' },
-    upcoming: { variant: 'upcoming' },
-    goal: { variant: 'goal' },
-  };
+import type { RoadmapProps } from '../roadmap.types';
 
 export const ROADMAPS: RoadmapProps[] = [
   { eyebrowNumber: '01', status: 'completed' },
