@@ -1,6 +1,4 @@
 export interface EducationProps {
-  eyebrow: string;
-  title: string;
+  id: string;
   subtitle: string;
-  description?: string;
 }

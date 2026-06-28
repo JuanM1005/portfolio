@@ -1,13 +1,14 @@
+import { useTranslation } from 'react-i18next';
 import { Card } from '@/components/ui';
 import type { EducationProps } from '../../education.types';
 import { EducationHeader } from '../EducationHeader/EducationHeader';
 
-export const EducationCard = ({
-  eyebrow,
-  title,
-  subtitle,
-  description,
-}: EducationProps) => {
+export const EducationCard = ({ id, subtitle }: EducationProps) => {
+  const { t } = useTranslation();
+  const eyebrow = t(`education.items.${id}.eyebrow`);
+  const title = t(`education.items.${id}.title`);
+  const description = t(`education.items.${id}.description`);
+
   return (
     <li className="h-full">
       <Card

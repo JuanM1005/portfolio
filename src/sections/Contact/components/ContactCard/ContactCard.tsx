@@ -1,13 +1,15 @@
+import { useTranslation } from 'react-i18next';
 import { Card, NavLink } from '@/components/ui';
 import type { ContactLink } from '../../contact.types';
 
 export const ContactCard = ({
   icon: Icon,
-  title,
+  titleKey,
   value,
   href,
   external,
 }: ContactLink) => {
+  const { t } = useTranslation();
   return (
     <li>
       <Card
@@ -29,7 +31,7 @@ export const ContactCard = ({
 
           <div className="flex flex-col gap-0.5">
             <h2 className="font-mono text-[11px] font-medium uppercase text-ink-soft/80">
-              {title}
+              {t(`contact.links.${titleKey}`)}
             </h2>
 
             <span className="text-sm font-medium text-ink">{value}</span>

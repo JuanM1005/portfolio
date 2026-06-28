@@ -1,8 +1,11 @@
+import { useTranslation } from 'react-i18next';
 import { FiChevronRight, FiTerminal } from 'react-icons/fi';
 import { CursorBlink } from '@/components/ui';
 import { HERO_TERMINAL } from '../../constants/hero.constants';
 
 export const HeroTerminal = () => {
+  const { t } = useTranslation();
+
   return (
     <div className="rounded-lg bg-surface/80 text-sm font-mono overflow-hidden shadow-lg">
       {/* Barra superior */}
@@ -32,7 +35,7 @@ export const HeroTerminal = () => {
             />
             {' whoami'}
           </p>
-          <p className="mt-1 pl-4">Ing. Informática · CUCEI · Guadalajara</p>
+          <p className="mt-1 pl-4">{t('hero.terminal.subtitle')}</p>
         </div>
 
         {/* Comando 2: cat stack.txt */}
@@ -47,15 +50,19 @@ export const HeroTerminal = () => {
             {' cat stack.txt'}
           </p>
           <p className="mt-1 pl-4">
-            Frontend en formación <span className="text-burgundy-500">→</span>{' '}
-            camino full stack
+            {t('hero.terminal.focus')}{' '}
+            <span className="text-burgundy-500">→</span>{' '}
+            {t('hero.terminal.focusSuffix')}
           </p>
           <p className="pl-4">
-            <span className="text-emerald-500">base:</span> C++ · Python · SQL
+            <span className="text-emerald-500">{t('hero.terminal.baseLabel')}</span>{' '}
+            C++ · Python · SQL
           </p>
           <p className="pl-4">
-            <span className="text-status-progress">en práctica:</span> React ·
-            TypeScript · Tailwind
+            <span className="text-status-progress">
+              {t('hero.terminal.practiceLabel')}
+            </span>{' '}
+            React · TypeScript · Tailwind
           </p>
         </div>
 

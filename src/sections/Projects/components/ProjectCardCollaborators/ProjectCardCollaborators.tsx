@@ -1,3 +1,4 @@
+import { useTranslation } from 'react-i18next';
 import type { Collaborator } from '../../projects.types';
 
 interface ProjectCardCollaboratorsProps {
@@ -7,10 +8,12 @@ interface ProjectCardCollaboratorsProps {
 export const ProjectCardCollaborators = ({
   collaborators,
 }: ProjectCardCollaboratorsProps) => {
+  const { t } = useTranslation();
+
   return (
     <div className="flex flex-col gap-1.5">
       <span className="font-mono text-xs text-ink-soft/90">
-        En colaboración
+        {t('projects.collaboratorsLabel')}
       </span>
       <div className="flex flex-wrap gap-2">
         {collaborators.map((collab) => (

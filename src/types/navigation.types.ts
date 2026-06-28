@@ -8,6 +8,5 @@ export type NavHref =
   | '#contact';
 
 export interface NavItem {
-  label: string;
   href: NavHref;
 }

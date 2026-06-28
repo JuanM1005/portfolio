@@ -1,4 +1,5 @@
 export type ProjectStatus = 'completed' | 'inProgress' | 'upcoming';
+export type ProjectCategory = 'academic' | 'personal';
 
 export interface Collaborator {
   label: string;
@@ -6,11 +7,10 @@ export interface Collaborator {
 }
 
 export interface ProjectProps {
+  id: string;
   title: string;
-  description: string;
   status: ProjectStatus;
-  category: string;
-  learned: string;
+  category: ProjectCategory;
   tags: string[];
   collaborators?: Collaborator[];
   repoUrl?: string;

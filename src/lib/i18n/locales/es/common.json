@@ -1,0 +1,244 @@
+{
+  "language": {
+    "switch": "Cambiar idioma",
+    "current": "Idioma actual: {{lang}}",
+    "spanish": "Español",
+    "english": "Inglés"
+  },
+  "actions": {
+    "viewProjects": "Ver proyectos",
+    "downloadCv": "Descargar CV",
+    "viewMore": "Ver más",
+    "send": "Enviar mensaje"
+  },
+  "nav": {
+    "home": "Inicio",
+    "about": "Sobre mí",
+    "skills": "Habilidades",
+    "projects": "Proyectos",
+    "roadmap": "Roadmap",
+    "education": "Educación",
+    "contact": "Contacto"
+  },
+  "hero": {
+    "badge": "Disponible para colaborar",
+    "title": "Desarrollador <1>frontend</1> en formación, construyendo interfaces claras y bien estructuradas.",
+    "subtitle": "Trabajo con React, TypeScript y Tailwind CSS mientras fortalezco mi camino hacia full stack. Me enfoco en crear experiencias limpias, responsivas y accesibles, con atención al detalle y disposición para aportar en proyectos reales.",
+    "ctaContact": "Contactar",
+    "stack": {
+      "current": "Stack actual"
+    },
+    "terminal": {
+      "subtitle": "Ing. Informática · CUCEI · Guadalajara",
+      "focus": "Frontend en formación",
+      "focusSuffix": "camino full stack",
+      "baseLabel": "base:",
+      "practiceLabel": "en práctica:"
+    }
+  },
+  "about": {
+    "eyebrow": "Sobre mí",
+    "title": "Base técnica, criterio visual y ganas de construir mejor.",
+    "description": "Soy estudiante de Ingeniería Informática en CUCEI y desarrollador frontend en formación. Mi base viene de proyectos académicos completos, sistemas de gestión, bases de datos y estructuras de datos implementadas desde cero. Hoy estoy enfocado en React, TypeScript y Tailwind CSS, con el objetivo de avanzar hacia full stack. Me interesa escribir interfaces limpias, responsivas y mantenibles, entendiendo tanto la experiencia del usuario como la estructura del código. Estoy en una etapa de crecimiento profesional: no exagero mi experiencia, pero sí cuido cada proyecto como una oportunidad para practicar, documentar decisiones y aportar con responsabilidad.",
+    "photo": {
+      "badge": "Retrato",
+      "ariaLabel": "Retrato de Juan Antonio Aguirre Mares",
+      "alt": "Foto de perfil de Juan Antonio Aguirre Mares"
+    },
+    "facts": {
+      "location": "Ubicación",
+      "studies": "Estudios",
+      "studiesValue": "Ing. Informática",
+      "focus": "Enfoque",
+      "base": "Base",
+      "learning": "Aprendiendo",
+      "status": "Estatus",
+      "statusValue": "Disponible"
+    }
+  },
+  "skills": {
+    "eyebrow": "Habilidades",
+    "title": "Herramientas que uso, bases que sostienen mi aprendizaje.",
+    "description": "Mi perfil combina fundamentos de programación con práctica frontend moderna. Distingo lo que ya he aplicado en proyectos de lo que sigo reforzando, para mostrar un avance claro y honesto.",
+    "groups": {
+      "technical": "Habilidades técnicas",
+      "workStyle": "Forma de trabajo"
+    },
+    "base": {
+      "title": "Base aplicada",
+      "eyebrow": "Fundamentos"
+    },
+    "learning": {
+      "title": "Frontend actual",
+      "eyebrow": "En práctica",
+      "nextSteps": "Próximos pasos",
+      "progressAria": "Progreso de {{name}}: {{progress}}%"
+    },
+    "status": {
+      "practicing": "Practicando",
+      "learning": "Aprendiendo"
+    },
+    "meta": {
+      "cpp": "POO · lógica · estructuras",
+      "python": "análisis · scripts · datos",
+      "sql": "modelado · consultas",
+      "htmlCss": "semántica · responsive",
+      "git": "versionado · colaboración"
+    },
+    "soft": {
+      "discipline": "Disciplina para aprender con constancia",
+      "detail": "Cuidado por el detalle",
+      "communication": "Comunicación clara en equipo",
+      "adaptability": "Adaptabilidad ante nuevos retos",
+      "feedback": "Apertura a feedback y mejora"
+    }
+  },
+  "projects": {
+    "eyebrow": "Proyectos",
+    "title": "Proyectos donde convierto aprendizaje en interfaces funcionales.",
+    "description": "Una selección de trabajos personales y académicos que muestran cómo resuelvo necesidades concretas, organizo componentes, consumo datos y documento lo aprendido en cada proceso.",
+    "learnedLabel": "Qué aprendí",
+    "collaboratorsLabel": "En colaboración",
+    "status": {
+      "completed": "Completado",
+      "inProgress": "En desarrollo",
+      "upcoming": "Próximo"
+    },
+    "category": {
+      "academic": "Académico",
+      "personal": "Personal"
+    },
+    "items": {
+      "petcare": {
+        "description": "Aplicación web para clínicas veterinarias pequeñas y medianas, pensada para organizar pacientes, citas e historial clínico con una base frontend escalable.",
+        "learned": "Organización feature-based, componentes reutilizables con Tailwind CSS v4 y planificación de una experiencia PWA offline-first."
+      },
+      "quicknotes": {
+        "description": "Aplicación de notas con búsqueda, filtros, sidebar y persistencia local, enfocada en una experiencia simple para capturar y encontrar información rápido.",
+        "learned": "Gestión de estado en React, modelado de interacciones de UI y persistencia de datos con localStorage."
+      },
+      "framelix": {
+        "description": "SPA de catálogo de películas que consume la API de TMDB, permite consultar detalles por película y organiza la navegación con React Router.",
+        "learned": "Consumo de APIs REST, manejo de rutas, colaboración con Git y despliegue de una aplicación frontend en Netlify."
+      },
+      "vetcare": {
+        "description": "Sistema de escritorio para gestión veterinaria: citas, clientes, pacientes, historial médico, vacunación e inventario en un flujo centralizado.",
+        "learned": "Modelado de datos relacional, diseño de interfaces de escritorio y coordinación de trabajo en equipo con Git."
+      },
+      "technest": {
+        "description": "Sistema de administración para una tienda de tecnología, desarrollado en C++ con POO para gestionar inventario, proveedores y pedidos.",
+        "learned": "Aplicación de POO, separación de responsabilidades y diseño básico de sistemas de gestión."
+      },
+      "dataStructures": {
+        "description": "Colección de estructuras de datos y algoritmos implementados desde cero para reforzar lógica, recorrido de datos y razonamiento algorítmico.",
+        "learned": "Comprensión práctica de eficiencia, organización de datos y solución de problemas desde fundamentos."
+      }
+    }
+  },
+  "roadmap": {
+    "eyebrow": "Roadmap full stack",
+    "title": "Un camino de crecimiento con pasos concretos.",
+    "description": "Mi ruta actual prioriza fortalecer frontend, sumar backend con criterio y construir proyectos completos donde cada nueva tecnología tenga una aplicación práctica y medible.",
+    "currentFocus": "En enfoque actual",
+    "status": {
+      "completed": "Completado",
+      "inProgress": "En curso",
+      "next": "Siguiente",
+      "upcoming": "Próximo",
+      "goal": "Meta"
+    },
+    "items": {
+      "01": {
+        "title": "Fundamentos Frontend",
+        "description": "HTML, CSS y JavaScript aplicados a maquetado responsivo, semántica y bases del lenguaje."
+      },
+      "02": {
+        "title": "React + TypeScript + Tailwind",
+        "description": "Componentes, estado, tipado estático y construcción de interfaces consistentes."
+      },
+      "03": {
+        "title": "Consumo de APIs REST",
+        "description": "Fetch, datos asíncronos, manejo de estados de carga y error."
+      },
+      "04": {
+        "title": "Node.js",
+        "description": "Primeros pasos con JavaScript del lado del servidor y estructura backend."
+      },
+      "05": {
+        "title": "Express & APIs propias",
+        "description": "Construcción de endpoints, rutas, validaciones y lógica de servidor."
+      },
+      "06": {
+        "title": "Bases de datos",
+        "description": "Reforzar SQL, modelado relacional y persistencia con PostgreSQL."
+      },
+      "07": {
+        "title": "Proyecto Full Stack",
+        "description": "Una aplicación de punta a punta para integrar frontend, backend, datos y despliegue."
+      }
+    }
+  },
+  "education": {
+    "eyebrow": "Educación",
+    "title": "Formación técnica aplicada a proyectos reales.",
+    "description": "Mi aprendizaje combina la base académica de Ingeniería Informática con práctica constante en desarrollo frontend. Busco que cada curso, proyecto y tecnología se traduzca en mejores decisiones de código, estructura e interfaz.",
+    "items": {
+      "university": {
+        "eyebrow": "2023 - Actualidad",
+        "title": "Ingeniería Informática",
+        "description": "Formación universitaria enfocada en programación, estructuras de datos, bases de datos, POO y fundamentos para construir software con lógica y organización."
+      },
+      "frontend": {
+        "eyebrow": "En curso",
+        "title": "Frontend moderno en práctica",
+        "description": "Aprendizaje guiado por proyectos personales, documentación oficial y mejora iterativa de interfaces limpias, responsivas y mantenibles."
+      }
+    }
+  },
+  "contact": {
+    "eyebrow": "Contacto",
+    "title": "¿Tienes una idea en mente?",
+    "description": "Estoy abierto a prácticas profesionales, proyectos frontend y nuevas oportunidades donde pueda aportar, aprender y seguir creciendo. Si tienes una propuesta, una idea o simplemente quieres saludar, estaré encantado de leerte.",
+    "form": {
+      "name": "Nombre",
+      "namePlaceholder": "Tu nombre",
+      "email": "Correo",
+      "emailPlaceholder": "Tu correo",
+      "message": "Mensaje",
+      "messagePlaceholder": "¿En qué te puedo ayudar?",
+      "submit": "Enviar mensaje",
+      "submitting": "Enviando..."
+    },
+    "toast": {
+      "noEndpoint": "No se configuró el endpoint del formulario.",
+      "success": "Mensaje enviado correctamente",
+      "error": "No se pudo enviar el mensaje. Inténtalo de nuevo."
+    },
+    "validation": {
+      "nameRequired": "El nombre es obligatorio",
+      "emailInvalid": "Ingresa un correo válido",
+      "emailRequired": "El correo es obligatorio",
+      "messageRequired": "El mensaje es obligatorio",
+      "messageMax": "El mensaje no puede superar los {{max}} caracteres"
+    },
+    "links": {
+      "email": "Correo",
+      "github": "Github"
+    }
+  },
+  "footer": {
+    "contact": "Contacto",
+    "explore": "Explorar",
+    "scrollTop": "Subir",
+    "tagline": "Frontend en formación",
+    "navAria": "Navegación del footer",
+    "homeAria": "Ir al inicio"
+  },
+  "header": {
+    "openMenu": "Abrir menú",
+    "closeMenu": "Cerrar menú",
+    "mobileNavAria": "Navegación móvil",
+    "mainNavAria": "Navegación principal",
+    "homeAria": "Ir al inicio"
+  }
+}

@@ -1,3 +1,4 @@
+import { useTranslation } from 'react-i18next';
 import { Card } from '@/components/ui';
 import type { ProjectProps } from '../../projects.types';
 import { ProjectCardHeader } from '../ProjectCardHeader/ProjectCardHeader';
@@ -6,15 +7,16 @@ import { ProjectCardLearned } from '../ProjectCardLearned/ProjectCardLearned';
 import { ProjectCardTags } from '../ProjectCardTags/ProjectCardTags';
 
 export const ProjectCard = ({
+  id,
   title,
-  description,
   status,
   category,
-  learned,
   tags,
   collaborators,
   repoUrl,
 }: ProjectProps) => {
+  const { t } = useTranslation();
+
   return (
     <Card
       variant="default"
@@ -25,13 +27,15 @@ export const ProjectCard = ({
 
       <h3 className="font-mono text-xl font-bold text-ink">{title}</h3>
 
-      <p className="text-sm leading-relaxed text-ink-muted">{description}</p>
+      <p className="text-sm leading-relaxed text-ink-muted">
+        {t(`projects.items.${id}.description`)}
+      </p>
 
       {collaborators && collaborators.length > 0 && (
         <ProjectCardCollaborators collaborators={collaborators} />
       )}
 
-      <ProjectCardLearned learned={learned} />
+      <ProjectCardLearned learned={t(`projects.items.${id}.learned`)} />
 
       <ProjectCardTags tags={tags} repoUrl={repoUrl} />
     </Card>

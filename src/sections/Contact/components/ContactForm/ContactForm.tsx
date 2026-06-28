@@ -1,3 +1,5 @@
+import { useMemo } from 'react';
+import { useTranslation } from 'react-i18next';
 import { Input, Textarea, Button } from '@/components/ui';
 import { MESSAGE_MAX_LENGTH } from '../../constants/contact.constants';
 import toast from 'react-hot-toast';
@@ -6,7 +8,7 @@ import { FormProvider, useForm } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
 
 import {
-  contactFormSchema,
+  createContactSchema,
   contactFormDefaultValues,
   type ContactFormValues,
 } from '../../schemas/contact.schema';
@@ -14,8 +16,11 @@ import {
 const FORMSPREE_ENDPOINT = import.meta.env.VITE_FORMSPREE_ENDPOINT;
 
 export const ContactForm = () => {
+  const { t } = useTranslation();
+  const schema = useMemo(() => createContactSchema(t), [t]);
+
   const methods = useForm<ContactFormValues>({
-    resolver: zodResolver(contactFormSchema),
+    resolver: zodResolver(schema),
     defaultValues: contactFormDefaultValues,
   });
 
@@ -28,7 +33,7 @@ export const ContactForm = () => {
   const onSubmit = async (data: ContactFormValues): Promise<void> => {
     try {
       if (!FORMSPREE_ENDPOINT) {
-        toast.error('No se configuró el endpoint del formulario.');
+        toast.error(t('contact.toast.noEndpoint'));
         return;
       }
 
@@ -43,10 +48,10 @@ export const ContactForm = () => {
 
       if (!response.ok) throw new Error('Request failed');
 
-      toast.success('Mensaje enviado correctamente');
+      toast.success(t('contact.toast.success'));
       reset();
     } catch {
-      toast.error('No se pudo enviar el mensaje. Inténtalo de nuevo.');
+      toast.error(t('contact.toast.error'));
     }
   };
 
@@ -59,25 +64,25 @@ export const ContactForm = () => {
       >
         <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
           <Input
-            label="Nombre"
+            label={t('contact.form.name')}
             name="name"
             type="text"
-            placeholder="Tu nombre"
+            placeholder={t('contact.form.namePlaceholder')}
           />
 
           <Input
-            label="Correo"
+            label={t('contact.form.email')}
             name="email"
             type="email"
-            placeholder="Tu correo"
+            placeholder={t('contact.form.emailPlaceholder')}
           />
         </div>
 
         <div className="mt-6 flex flex-col gap-6">
           <Textarea
-            label="Mensaje"
+            label={t('contact.form.message')}
             name="message"
-            placeholder="¿En qué te puedo ayudar?"
+            placeholder={t('contact.form.messagePlaceholder')}
             maxLength={MESSAGE_MAX_LENGTH}
           />
 
@@ -88,7 +93,7 @@ export const ContactForm = () => {
             className="w-full"
             disabled={isSubmitting}
           >
-            {isSubmitting ? 'Enviando...' : 'Enviar mensaje'}
+            {isSubmitting ? t('contact.form.submitting') : t('actions.send')}
           </Button>
         </div>
       </form>

@@ -1,13 +1,15 @@
 import { z } from 'zod';
-import { nameSchema, emailSchema, messageSchema } from './common.schema';
+import type { TFunction } from 'i18next';
+import { createNameSchema, createEmailSchema, createMessageSchema } from './common.schema';
 
-export const contactFormSchema = z.object({
-  name: nameSchema,
-  email: emailSchema,
-  message: messageSchema,
-});
+export const createContactSchema = (t: TFunction) =>
+  z.object({
+    name: createNameSchema(t),
+    email: createEmailSchema(t),
+    message: createMessageSchema(t),
+  });
 
-export type ContactFormValues = z.infer<typeof contactFormSchema>;
+export type ContactFormValues = z.infer<ReturnType<typeof createContactSchema>>;
 
 export const contactFormDefaultValues: ContactFormValues = {
   name: '',

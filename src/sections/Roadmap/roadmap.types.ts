@@ -7,7 +7,5 @@ export type RoadmapStatus =
 
 export interface RoadmapProps {
   eyebrowNumber: string;
-  title: string;
-  description?: string;
   status: RoadmapStatus;
 }
