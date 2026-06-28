@@ -1,3 +1,4 @@
+import { useId } from 'react';
 import clsx from 'clsx';
 import { useFormContext, useWatch } from 'react-hook-form';
 import type { TextareaProps } from './Textarea.types';
@@ -14,7 +15,8 @@ export const Textarea = ({
   className,
   ...rest
 }: TextareaProps) => {
-  const textareaId = id ?? name;
+  const reactId = useId();
+  const textareaId = id ?? reactId;
 
   const {
     register,

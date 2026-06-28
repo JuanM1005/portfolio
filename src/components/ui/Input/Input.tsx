@@ -1,3 +1,4 @@
+import { useId } from 'react';
 import clsx from 'clsx';
 import { useFormContext } from 'react-hook-form';
 import type { InputProps } from './Input.types';
@@ -12,7 +13,8 @@ export const Input = ({
   className,
   ...rest
 }: InputProps) => {
-  const inputId = id ?? name;
+  const reactId = useId();
+  const inputId = id ?? reactId;
 
   const {
     register,
