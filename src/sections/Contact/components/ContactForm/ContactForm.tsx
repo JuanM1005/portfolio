@@ -67,6 +67,7 @@ export const ContactForm = () => {
             label={t('contact.form.name')}
             name="name"
             type="text"
+            autoComplete="name"
             placeholder={t('contact.form.namePlaceholder')}
           />
 
@@ -74,6 +75,7 @@ export const ContactForm = () => {
             label={t('contact.form.email')}
             name="email"
             type="email"
+            autoComplete="email"
             placeholder={t('contact.form.emailPlaceholder')}
           />
         </div>
