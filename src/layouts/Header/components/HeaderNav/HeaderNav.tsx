@@ -22,7 +22,10 @@ export const HeaderNav = ({
   const { t } = useTranslation();
 
   return (
-    <nav className={className} aria-label={ariaLabel ?? t('header.mainNavAria')}>
+    <nav
+      className={className}
+      aria-label={ariaLabel ?? t('header.mainNavAria')}
+    >
       {navItems.map((item) => {
         const isActive = activeHref === item.href;
         const navKey = item.href.slice(1) as string;

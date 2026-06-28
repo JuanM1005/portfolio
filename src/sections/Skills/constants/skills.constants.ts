@@ -19,8 +19,18 @@ export const SOFT_SKILLS: SkillItem[] = [
 export const LEARNING_SKILLS: LearningSkill[] = [
   { id: 'react', name: 'React', statusKey: 'practicing', progress: 60 },
   { id: 'typescript', name: 'TypeScript', statusKey: 'learning', progress: 40 },
-  { id: 'tailwind', name: 'Tailwind CSS', statusKey: 'practicing', progress: 75 },
-  { id: 'jsModerno', name: 'JavaScript moderno', statusKey: 'learning', progress: 55 },
+  {
+    id: 'tailwind',
+    name: 'Tailwind CSS',
+    statusKey: 'practicing',
+    progress: 75,
+  },
+  {
+    id: 'jsModerno',
+    name: 'JavaScript moderno',
+    statusKey: 'learning',
+    progress: 55,
+  },
 ];
 
 export const ROADMAP_NEXT: string[] = [

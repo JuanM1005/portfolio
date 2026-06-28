@@ -19,14 +19,14 @@ Estoy en una etapa de crecimiento profesional: no exagero mi experiencia, pero s
 
 ## 🎯 En qué estoy enfocado ahora
 
-| | |
-|---|---|
-| 📍 Ubicación | Guadalajara, MX |
-| 🎓 Estudios | Ingeniería Informática — CUCEI, UDG |
-| 🧭 Enfoque | Frontend → Full Stack |
-| 🔧 Base | C++ · Python · SQL |
-| ⚡ Aprendiendo | React · TypeScript · Tailwind CSS |
-| ✅ Estatus | Disponible |
+|                |                                     |
+| -------------- | ----------------------------------- |
+| 📍 Ubicación   | Guadalajara, MX                     |
+| 🎓 Estudios    | Ingeniería Informática — CUCEI, UDG |
+| 🧭 Enfoque     | Frontend → Full Stack               |
+| 🔧 Base        | C++ · Python · SQL                  |
+| ⚡ Aprendiendo | React · TypeScript · Tailwind CSS   |
+| ✅ Estatus     | Disponible                          |
 
 ---
 
@@ -42,6 +42,7 @@ Estoy en una etapa de crecimiento profesional: no exagero mi experiencia, pero s
 `Node.js` · `Express` · `APIs REST` · `Autenticación`
 
 **Forma de trabajo**
+
 - Disciplina para aprender con constancia
 - Cuidado por el detalle
 - Comunicación clara en equipo
@@ -52,24 +53,24 @@ Estoy en una etapa de crecimiento profesional: no exagero mi experiencia, pero s
 
 ## 🗺️ Mi roadmap a full stack
 
-| # | Etapa | Estado |
-|---|-------|--------|
-| 01 | Fundamentos Frontend | ✅ Completado |
-| 02 | React + TypeScript + Tailwind | ✅ Completado |
-| 03 | Consumo de APIs REST | 🔄 En curso |
-| 04 | Node.js | ⏳ Próximo |
-| 05 | Express & APIs propias | ⏳ Próximo |
-| 06 | Bases de datos (PostgreSQL) | ⏳ Próximo |
-| 07 | Proyecto Full Stack completo | 🎯 Meta |
+| #   | Etapa                         | Estado        |
+| --- | ----------------------------- | ------------- |
+| 01  | Fundamentos Frontend          | ✅ Completado |
+| 02  | React + TypeScript + Tailwind | ✅ Completado |
+| 03  | Consumo de APIs REST          | 🔄 En curso   |
+| 04  | Node.js                       | ⏳ Próximo    |
+| 05  | Express & APIs propias        | ⏳ Próximo    |
+| 06  | Bases de datos (PostgreSQL)   | ⏳ Próximo    |
+| 07  | Proyecto Full Stack completo  | 🎯 Meta       |
 
 ---
 
 ## 🎓 Formación
 
-**Ingeniería Informática** — CUCEI · Universidad de Guadalajara *(2023 – actualidad)*
+**Ingeniería Informática** — CUCEI · Universidad de Guadalajara _(2023 – actualidad)_
 Programación, estructuras de datos, bases de datos, POO y fundamentos para construir software con lógica y organización.
 
-**Frontend moderno en práctica** — React · TypeScript · Tailwind CSS *(En curso)*
+**Frontend moderno en práctica** — React · TypeScript · Tailwind CSS _(En curso)_
 Aprendizaje guiado por proyectos personales, documentación oficial y mejora iterativa de interfaces limpias, responsivas y mantenibles.
 
 ---
@@ -100,10 +101,10 @@ bun install
 bun run dev
 ```
 
-| Script | Descripción |
-|--------|-------------|
-| `bun run dev` | Servidor de desarrollo con HMR |
-| `bun run build` | Build de producción (`tsc -b && vite build`) |
-| `bun run preview` | Previsualiza el build de producción |
-| `bun run lint` | Analiza el código con ESLint |
-| `bun run format` | Formatea todos los archivos con Prettier |
+| Script            | Descripción                                  |
+| ----------------- | -------------------------------------------- |
+| `bun run dev`     | Servidor de desarrollo con HMR               |
+| `bun run build`   | Build de producción (`tsc -b && vite build`) |
+| `bun run preview` | Previsualiza el build de producción          |
+| `bun run lint`    | Analiza el código con ESLint                 |
+| `bun run format`  | Formatea todos los archivos con Prettier     |

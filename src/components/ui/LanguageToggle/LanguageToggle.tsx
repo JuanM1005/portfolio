@@ -32,7 +32,9 @@ export const LanguageToggle = () => {
       onClick={handleToggle}
     >
       <HiOutlineLanguage size={18} />
-      <span className="font-mono uppercase tracking-wide">{currentLanguage}</span>
+      <span className="font-mono uppercase tracking-wide">
+        {currentLanguage}
+      </span>
     </Button>
   );
 };

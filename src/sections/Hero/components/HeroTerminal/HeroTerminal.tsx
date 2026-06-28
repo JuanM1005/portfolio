@@ -55,7 +55,9 @@ export const HeroTerminal = () => {
             {t('hero.terminal.focusSuffix')}
           </p>
           <p className="pl-4">
-            <span className="text-emerald-500">{t('hero.terminal.baseLabel')}</span>{' '}
+            <span className="text-emerald-500">
+              {t('hero.terminal.baseLabel')}
+            </span>{' '}
             C++ · Python · SQL
           </p>
           <p className="pl-4">

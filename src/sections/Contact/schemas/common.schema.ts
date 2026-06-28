@@ -16,4 +16,7 @@ export const createMessageSchema = (t: TFunction) =>
     .string()
     .trim()
     .min(1, t('contact.validation.messageRequired'))
-    .max(MESSAGE_MAX_LENGTH, t('contact.validation.messageMax', { max: MESSAGE_MAX_LENGTH }));
+    .max(
+      MESSAGE_MAX_LENGTH,
+      t('contact.validation.messageMax', { max: MESSAGE_MAX_LENGTH }),
+    );

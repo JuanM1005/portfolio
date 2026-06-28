@@ -1,6 +1,10 @@
 import { z } from 'zod';
 import type { TFunction } from 'i18next';
-import { createNameSchema, createEmailSchema, createMessageSchema } from './common.schema';
+import {
+  createNameSchema,
+  createEmailSchema,
+  createMessageSchema,
+} from './common.schema';
 
 export const createContactSchema = (t: TFunction) =>
   z.object({
