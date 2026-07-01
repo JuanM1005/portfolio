@@ -13,7 +13,7 @@ interface HeaderNavProps {
 }
 
 export const HeaderNav = ({
-  className = 'hidden md:flex items-center gap-8',
+  className = 'hidden lg:flex items-center gap-6',
   itemClassName,
   ariaLabel,
   activeHref,

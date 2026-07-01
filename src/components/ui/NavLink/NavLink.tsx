@@ -15,7 +15,7 @@ export const NavLink = ({
     <a
       href={href}
       className={clsx(
-        'relative inline-flex h-8 cursor-pointer items-center px-1 font-sans text-sm transition-colors duration-200',
+        'relative inline-flex h-8 cursor-pointer items-center whitespace-nowrap px-1 font-sans text-sm transition-colors duration-200',
         withFocusRing
           ? clsx(
               'rounded-sm focus-visible:outline-none focus-visible:ring-2',

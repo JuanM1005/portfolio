@@ -24,7 +24,7 @@ export const Header = () => {
           aria-hidden="true"
           className="absolute inset-0 -z-10 bg-surface/80 backdrop-blur"
         />
-        <Container className="flex min-h-16 items-center justify-between py-6">
+        <Container className="flex min-h-16 items-center justify-between py-3">
           <HeaderLogo />
           <HeaderNav activeHref={activeHref} onItemClick={setActiveHref} />
           <div className="flex items-center justify-between gap-2">

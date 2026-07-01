@@ -11,7 +11,7 @@ export const HeaderCta = ({ className }: HeaderCtaProps) => {
   const { t } = useTranslation();
 
   return (
-    <div className={clsx('hidden md:block', className)}>
+    <div className={clsx('hidden lg:block', className)}>
       <NavLink
         href={CV_HREF}
         download
