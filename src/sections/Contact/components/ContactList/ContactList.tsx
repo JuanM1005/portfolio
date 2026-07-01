@@ -4,8 +4,8 @@ import { ContactCard } from '../ContactCard/ContactCard';
 export const ContactList = () => {
   return (
     <ul className="grid auto-rows-fr grid-cols-1 gap-6 max-w-md">
-      {CONTACT_LINKS.map((education) => (
-        <ContactCard key={education.href} {...education} />
+      {CONTACT_LINKS.map((contact) => (
+        <ContactCard key={contact.href} {...contact} />
       ))}
     </ul>
   );
