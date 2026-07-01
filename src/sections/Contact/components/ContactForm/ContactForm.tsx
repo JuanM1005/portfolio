@@ -1,59 +1,13 @@
-import { useMemo } from 'react';
 import { useTranslation } from 'react-i18next';
+import { FormProvider } from 'react-hook-form';
 import { Input, Textarea, Button } from '@/components/ui';
 import { MESSAGE_MAX_LENGTH } from '../../constants/contact.constants';
-import toast from 'react-hot-toast';
-
-import { FormProvider, useForm } from 'react-hook-form';
-import { zodResolver } from '@hookform/resolvers/zod';
-
-import {
-  createContactSchema,
-  contactFormDefaultValues,
-  type ContactFormValues,
-} from '../../schemas/contact.schema';
-
-const FORMSPREE_ENDPOINT = import.meta.env.VITE_FORMSPREE_ENDPOINT;
+import { useContactForm } from '../../hooks';
 
 export const ContactForm = () => {
   const { t } = useTranslation();
-  const schema = useMemo(() => createContactSchema(t), [t]);
-
-  const methods = useForm<ContactFormValues>({
-    resolver: zodResolver(schema),
-    defaultValues: contactFormDefaultValues,
-  });
-
-  const {
-    handleSubmit,
-    reset,
-    formState: { isSubmitting },
-  } = methods;
-
-  const onSubmit = async (data: ContactFormValues): Promise<void> => {
-    try {
-      if (!FORMSPREE_ENDPOINT) {
-        toast.error(t('contact.toast.noEndpoint'));
-        return;
-      }
-
-      const response = await fetch(FORMSPREE_ENDPOINT, {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-          Accept: 'application/json',
-        },
-        body: JSON.stringify(data),
-      });
-
-      if (!response.ok) throw new Error('Request failed');
-
-      toast.success(t('contact.toast.success'));
-      reset();
-    } catch {
-      toast.error(t('contact.toast.error'));
-    }
-  };
+  const { methods, onSubmit, isSubmitting } = useContactForm();
+  const { handleSubmit } = methods
 
   return (
     <FormProvider {...methods}>
